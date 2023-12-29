@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /
+
+
+User-agent: Googlebot
+User-agent: AdsBot-Google
+
+
+Sitemap: https://actc.pro/sitemap.xml

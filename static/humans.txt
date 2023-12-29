@@ -1,0 +1,13 @@
+/* TEAM */
+	Developer: Christopher Hicks
+	Contact: chris [at] webboot.io
+	Twitter: @topher_hicks
+	From: Washington, USA
+
+
+/* THANKS */
+		
+
+/* SITE */
+	Last update: 2023/12/29
+	Language: English 
