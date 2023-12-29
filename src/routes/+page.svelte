@@ -6,16 +6,19 @@
 <main class="relative">
   <section
     id="hero"
-    class="min-h-[90vh] bg-stone-700 flex flex-col justify-center"
+    class="min-h-[90vh] bg-stone-800 flex flex-col justify-center"
   >
     <div
       class="container flex flex-col gap-6 justify-center items-center text-center h-full"
     >
-      <h1 class="text-4xl text-neutral-200">
-        A better window contractor for the Portland and surrounding areas
+      <p class=" sm:hidden text-xl sm:text-2xl text-neutral-200">
+        A Custom Touch Construction
+      </p>
+      <h1 class="text-3xl sm:text-4xl text-neutral-200">
+        The better window contractor for Portland and surrounding areas
       </h1>
-      <p class="text-2xl text-neutral-200">
-        Serving Portland and surrounding areas since 2022
+      <p class="text-xl sm:text-2xl text-neutral-200">
+        Proudly making homes better since 2022
       </p>
     </div>
   </section>
@@ -67,7 +70,11 @@
       <div class="flex flex-col gap-2">
         <p>Call or Email to start making your home better today.</p>
         <p>
-          Email: <a class="link p-1" target="_blank" href="mailto:mike@actc.pro">
+          Email: <a
+            class="link p-1"
+            target="_blank"
+            href="mailto:mike@actc.pro"
+          >
             mike@actc.pro
           </a>
         </p>
@@ -76,7 +83,6 @@
             (971) 201-5990
           </a>
         </p>
-
       </div>
     </div>
   </section>
