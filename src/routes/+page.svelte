@@ -4,7 +4,21 @@
 </script>
 
 <main class="relative">
-  <section id="hero" class="min-h-[90vh] bg-stone-700"></section>
+  <section
+    id="hero"
+    class="min-h-[90vh] bg-stone-700 flex flex-col justify-center"
+  >
+    <div
+      class="container flex flex-col gap-6 justify-center items-center text-center h-full"
+    >
+      <h1 class="text-4xl text-neutral-200">
+        A better window contractor for the Portland and surrounding areas
+      </h1>
+      <p class="text-2xl text-neutral-200">
+        Serving Portland and surrounding areas since 2022
+      </p>
+    </div>
+  </section>
   <section id="services" class="">
     <div
       class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
@@ -50,7 +64,20 @@
   <section id="contact" class="my-8">
     <div class="container">
       <h2 class="text-3xl mb-4">Contact</h2>
-      <p></p>
+      <div class="flex flex-col gap-2">
+        <p>Call or Email to start making your home better today.</p>
+        <p>
+          Email: <a class="link p-1" target="_blank" href="mailto:mike@actc.pro">
+            mike@actc.pro
+          </a>
+        </p>
+        <p>
+          Phone: <a class="link p-1" target="_blank" href="tel:+19712015990">
+            (971) 201-5990
+          </a>
+        </p>
+
+      </div>
     </div>
   </section>
 </main>

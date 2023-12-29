@@ -8,7 +8,7 @@
     class="container w-full grid grid-cols-nav justify-between items-center py-2 min-h-12"
   >
     <a href="/" class="flex gap-2 items-center">
-      <span class="text-2xl text-white hidden sm:inline"
+      <span class="text-2xl text-white hidden sm:inline-block"
         >A Custom Touch Construction</span
       >
     </a>
