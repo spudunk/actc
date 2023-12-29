@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+   /* init display font here */
+  }
+
+  :root {
+    --nav-height: 3rem;
+  }
+  html {
+    /* font-family: "Nunito Variable", sans-serif; */
+    /* font-display: optional; */
+    scroll-behavior: smooth;
+  }
+
+  section {
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+    scroll-snap-margin-top: calc(
+      var(--nav-height) + 1rem
+    ); /* iOS 11 and older */
+  }
+}
+
+@layer utilities {
+  .text-wrap-balance {
+    text-wrap: balance;
+  }
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .link {
+    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+  }
+  .btn {
+    @apply flex items-center w-fit gap-2 font-extrabold sm:font-semibold text-sm sm:text-lg px-2 sm:px-4 py-1 bg-amber-700 sm:bg-amber-600 opacity-100 text-white rounded transition sm:hover:scale-105;
+  }
+  .btn-secondary {
+    @apply flex items-center w-fit gap-2 font-extrabold sm:font-semibold text-sm sm:text-lg px-2 sm:px-4 py-1 bg-cyan-700 sm:bg-cyan-600 opacity-100 text-white rounded transition sm:hover:scale-105;
+  }
+}
