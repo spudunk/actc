@@ -9,7 +9,7 @@
       src={image.path}
       alt={image.alt}
       id={image.id}
-      class="h-60 md:h-72 w-auto rounded"
+      class="h-60 md:h-72 lg:h-80 w-auto rounded"
     />
   {/each}
 </div>
