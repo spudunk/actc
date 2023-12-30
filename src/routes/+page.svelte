@@ -1,6 +1,9 @@
 <script>
   import Card from "$lib/Card.svelte";
   import MdiWindowClosed from "$lib/icons/window_closed_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiDoorOpen from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
 </script>
 
 <main class="relative bg-neutral-50">
@@ -26,14 +29,14 @@
     <div
       class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
     >
-      <Card title={"Windows & Doors"} image={MdiWindowClosed}>
+      <Card title={"Windows & Doors"} image={MdiDoorOpen}>
         <p>Expert installation for longevity and energy efficiency</p>
         <ul class="list-disc list-inside">
           <li>Reduce your heating and cooling bill</li>
           <li>Secure your home</li>
         </ul>
       </Card>
-      <Card title={"Siding"} image={MdiWindowClosed}>
+      <Card title={"Siding"} image={MdiHouseSiding}>
         <p>
           Long lasting exteriors to keep the outside out and look great doing it
         </p>
@@ -42,7 +45,7 @@
           <li>Improve fire safety</li>
         </ul>
       </Card>
-      <Card title={"Kitchen & Bath"} image={MdiWindowClosed}>
+      <Card title={"Kitchen & Bath"} image={MdiCountertops}>
         <p>Build the kitchen of your dreams without the nightmares</p>
         <ul class="list-disc list-inside">
           <li>Prevent mold and mildew by design</li>
