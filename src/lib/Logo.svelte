@@ -6,13 +6,10 @@
   <svg
     aria-label="A Custom Touch Construction Logo"
     version="1.1"
-    id="Layer_1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="logo"
     x="0px"
     y="0px"
     viewBox="0 0 1280 1024"
-    style="enable-background:new 0 0 1280 1024;"
     xml:space="preserve"
     class={`${$$props.class}`}
   >

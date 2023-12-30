@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Logo from "$lib/icons/Logo.svelte";
+  import Logo from "$lib/Logo.svelte";
   import { page } from "$app/stores";
   $: home = $page.url.pathname === "/";
   let y = 0;
@@ -19,7 +19,7 @@
   >
     <a href="/" class="flex gap-2 items-center">
       <Logo
-        class={`fill-white text-white h-full transition-all duration-200 ${
+        class={`fill-white text-white transition-all duration-200 ${
           expand ? "h-16 sm:h-24" : "h-12"
         } 
       `}
