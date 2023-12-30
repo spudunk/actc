@@ -1,6 +1,5 @@
 <script>
   import Card from "$lib/Card.svelte";
-  import MdiWindowClosed from "$lib/icons/window_closed_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
