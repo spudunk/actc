@@ -3,7 +3,7 @@
   import MdiWindowClosed from "$lib/icons/window_closed_FILL0_wght400_GRAD0_opsz24.svg";
 </script>
 
-<main class="relative">
+<main class="relative bg-neutral-50">
   <section
     id="hero"
     class="min-h-[90vh] bg-stone-800 flex flex-col justify-center"
@@ -15,10 +15,10 @@
         A Custom Touch Construction
       </p>
       <h1 class="text-3xl sm:text-4xl text-neutral-200">
-        The better window contractor for Portland and surrounding areas
+        The better kitchen contractor for Portland and surrounding areas
       </h1>
       <p class="text-xl sm:text-2xl text-neutral-200">
-        Proudly making homes better since 2022
+        Proudly improving homes since 1995
       </p>
     </div>
   </section>
@@ -26,28 +26,28 @@
     <div
       class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
     >
-      <Card title={"Windows"} image={MdiWindowClosed}>
-        <p>Expert installation for longevity and efficiency</p>
+      <Card title={"Windows & Doors"} image={MdiWindowClosed}>
+        <p>Expert installation for longevity and energy efficiency</p>
         <ul class="list-disc list-inside">
-          <li>Energy Efficient</li>
-          <li>Long Warranty</li>
-          <li>Expert Service</li>
+          <li>Reduce your heating and cooling bill</li>
+          <li>Secure your home</li>
         </ul>
       </Card>
-      <Card title={"Windows"} image={MdiWindowClosed}>
-        <p>Expert installation for longevity and efficiency</p>
+      <Card title={"Siding"} image={MdiWindowClosed}>
+        <p>
+          Long lasting exteriors to keep the outside out and look great doing it
+        </p>
         <ul class="list-disc list-inside">
-          <li>Energy Efficient</li>
-          <li>Long Warranty</li>
-          <li>Expert Service</li>
+          <li>Protect your home for decades</li>
+          <li>Improve fire safety</li>
         </ul>
       </Card>
-      <Card title={"Windows"} image={MdiWindowClosed}>
-        <p>Expert installation for longevity and efficiency</p>
+      <Card title={"Kitchen & Bath"} image={MdiWindowClosed}>
+        <p>Build the kitchen of your dreams without the nightmares</p>
         <ul class="list-disc list-inside">
-          <li>Energy Efficient</li>
-          <li>Long Warranty</li>
-          <li>Expert Service</li>
+          <li>Prevent mold and mildew by design</li>
+          <li>Live healthier and love home more</li>
+          <li>Impress with true craftsmanship</li>
         </ul>
       </Card>
     </div>
@@ -56,11 +56,31 @@
   <section id="about" class="mt-24 mb-16">
     <div class="container">
       <h2 class="text-3xl mb-4">About</h2>
-      <p>
-        Mike has been in the construction industry for 25 years and started A
-        Custom Touch Construction in 2022 to improve the window offerings in the
-        Portland Area
+      <p class="my-4">
+        Mike started A Custom Touch Construction in 1995 with a purpose. While
+        skills and techniques have improved over 27 years, the core values have
+        remained the same.
       </p>
+      <div class="text-lg px-1 py-2 rounded bg-slate-200 flex flex-col gap-2">
+        <p>
+          <span class="text-2xl h-2 inline-block">&ldquo;</span> I was tired of seeing
+          constumers get screwed by contractors. It’s all about the constumer for
+          me.
+        </p>
+        <p>
+          I don’t have a single CCB complaint. I acknowledge my mistakes and
+          work to make things right. I don’t leave until they’re happy.
+        </p>
+        <p class="font-bold text-green-900 text-xl">
+          I’d rather lose money than leave an unhappy customer.
+        </p>
+        <p>
+          The damage to my reputation is just not worth it. <span
+            class="text-2xl h-2 inline-block">&rdquo;</span
+          >
+        </p>
+        <p class="font-bold">- Mike Shurts</p>
+      </div>
     </div>
   </section>
 

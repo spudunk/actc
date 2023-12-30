@@ -10,5 +10,5 @@
   <img class="self-center h-24" src={image} alt="">
 {/if}
   <h2 class="text-2xl font-display text-center ">{title}</h2>
-  <div><slot /></div>
+  <div class="flex flex-col gap-2"><slot /></div>
 </div>
