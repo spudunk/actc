@@ -108,8 +108,8 @@
         <p class="relative ml-4">
           <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
           >
-          I was tired of seeing constumers get screwed by contractors. It’s all about
-          the constumer for me.
+          I was tired of seeing customers get screwed by contractors. It’s all about
+          the customer for me.
         </p>
         <p class="ml-4">
           I don’t have a single CCB complaint. I acknowledge my mistakes and
