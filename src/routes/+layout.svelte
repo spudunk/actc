@@ -33,6 +33,13 @@
         >
           Google
         </a>
+        <a
+          class="link hidden"
+          target="_blank"
+          href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x48726993c8426b19:0x4a10e8457558261f?hl=en-US"
+        >
+          Google Maps
+        </a>
       </div>
       <a
         class="inline-block"
