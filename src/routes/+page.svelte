@@ -105,7 +105,7 @@
         skills and techniques have improved over 27 years, the core values have
         remained the same.
       </p>
-      <div class="text-lg px-2 py-2 rounded bg-indigo-50 flex flex-col gap-2">
+      <div class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2">
         <p class="relative ml-4">
           <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
           >
