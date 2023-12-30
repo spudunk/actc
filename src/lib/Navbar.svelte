@@ -38,7 +38,7 @@
       >
       <a
         href="tel:+19712015990"
-        class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 "
+        class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
         >Call Now</a
       >
     </div>

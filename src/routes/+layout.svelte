@@ -10,9 +10,9 @@
 <footer class="my-8">
   <div class="container min-h-12">
     <div class="w-fit mx-auto text-center flex flex-col">
-      <div class="flex gap-4 w-full justify-center mb-2">
+      <div class="flex gap-1 w-full justify-center mb-2">
         <a
-          class="link"
+          class="link p-2"
           target="_blank"
           href="https://www.facebook.com/profile.php?id=100083274858015"
         >
@@ -20,21 +20,21 @@
         </a>
 
         <a
-          class="link"
+          class="link p-2"
           target="_blank"
           href="https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2"
         >
           Yelp
         </a>
         <a
-          class="link"
+          class="link p-2"
           target="_blank"
           href="https://www.google.com/search?q=a+custom+touch+construction+north+plains+oregon&sca_esv=594646980&sxsrf=AM9HkKkqMoXOEfLK7fnOO5erzKOYaSqQ_Q%3A1703975197858&source=hp&ei=HZmQZZmVMZDk0PEP45Gk8Ag&iflsig=AO6bgOgAAAAAZZCnLUTSHe3eBreqmDA09YNF-jK6KmE0&oq=a+custom+touch+construction+north+plains+&gs_lp=Egdnd3Mtd2l6IilhIGN1c3RvbSB0b3VjaCBjb25zdHJ1Y3Rpb24gbm9ydGggcGxhaW5zICoCCAAyBRAhGKABMgUQIRigATIFECEYoAFIhTlQAFivLnABeACQAQCYAcwBoAHjKaoBBjAuMzEuMbgBA8gBAPgBAvgBAagCCsICBxAjGOoCGCfCAgQQIxgnwgIKECMYgAQYigUYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICDhAuGIAEGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgUQLhiABMICDhAuGIAEGLEDGIMBGNQCwgILEC4YgAQYsQMYgwHCAgUQABiABMICCBAuGLEDGIAEwgILEC4YgAQYsQMY1ALCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgILEC4YrwEYxwEYgATCAgYQABgWGB7CAggQABgWGB4YD8ICCxAAGIAEGIoFGIYDwgIFECEYqwI&sclient=gws-wiz"
         >
           Google
         </a>
         <a
-          class="link hidden"
+          class="link p-2 hidden"
           target="_blank"
           href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x48726993c8426b19:0x4a10e8457558261f?hl=en-US"
         >
