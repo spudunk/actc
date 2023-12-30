@@ -33,7 +33,7 @@
     <div class="flex flex-row-reverse">
       <a
         href="#contact"
-        class="hidden sm:inline-block text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 hover:bg-neutral-300 hover:scale-105 transition-all"
+        class="hidden sm:inline-block text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 hover:bg-neutral-100 hover:scale-105 transition-all"
         >Contact Us</a
       >
       <a
