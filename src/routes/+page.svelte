@@ -124,7 +124,7 @@
         </p>
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
-      <p class="mt-4 text-xl flex items-center gap-2">
+      <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
         <img class="h-6 inline-block" src={Google} alt="Google logo" />
         <span> Our Google reviews:</span>
         <a
