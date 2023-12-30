@@ -21,7 +21,7 @@
         A Custom Touch Construction
       </p>
       <h1 class="text-3xl sm:text-4xl text-neutral-200">
-        The better kitchen contractor for Portland and surrounding areas
+        The Better Kitchen Contractor for Portland and Surrounding Areas
       </h1>
       <p class="text-xl sm:text-2xl text-neutral-200">
         Proudly improving homes since 1995
@@ -71,7 +71,7 @@
         <p class="relative ml-4">
           <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
           >
-          I was tired of seeing constumers get *** by contractors. It’s all about
+          I was tired of seeing constumers get screwed by contractors. It’s all about
           the constumer for me.
         </p>
         <p class="ml-4">
