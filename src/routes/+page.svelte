@@ -59,7 +59,7 @@
         A Custom Touch Construction
       </p>
       <h1 class="text-3xl sm:text-4xl text-neutral-200">
-        The Better Kitchen Contractor for Portland and Surrounding Areas
+        The Better General Contractor for Portland and Surrounding Areas
       </h1>
       <p class="text-xl sm:text-2xl text-neutral-200">
         Proudly improving homes since 1995
