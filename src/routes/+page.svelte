@@ -4,17 +4,20 @@
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
+  import SEO from "$lib/SEO.svelte";
 </script>
 
-<main class="relative bg-neutral-50">
+<SEO />
+
+<main class="relative">
   <section
     id="hero"
-    class="min-h-[90vh] bg-stone-800 flex flex-col justify-center"
+    class="min-h-[90vh] bg-gradient-to-b from-amber-950 via-neutral-900 to-neutral-800 flex flex-col justify-center"
   >
     <div
       class="container flex flex-col gap-6 justify-center items-center text-center h-full"
     >
-      <p class=" sm:hidden text-xl sm:text-2xl text-neutral-200">
+      <p class=" md:hidden text-xl text-neutral-200">
         A Custom Touch Construction
       </p>
       <h1 class="text-3xl sm:text-4xl text-neutral-200">
@@ -64,9 +67,10 @@
         skills and techniques have improved over 27 years, the core values have
         remained the same.
       </p>
-      <div class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2">
+      <div class="text-lg px-2 py-2 rounded bg-indigo-50 flex flex-col gap-2">
         <p class="relative ml-4">
-          <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span>
+          <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
+          >
           I was tired of seeing constumers get *** by contractors. It’s all about
           the constumer for me.
         </p>
@@ -91,7 +95,7 @@
       <h2 class="text-3xl mb-4">Contact</h2>
       <div class="flex flex-col gap-2">
         <p>Call or Email to start making your home better today.</p>
-        <p>
+        <p class="text-xl">
           Email: <a
             class="link p-1"
             target="_blank"
@@ -100,7 +104,7 @@
             mike@actc.pro
           </a>
         </p>
-        <p>
+        <p class="text-xl">
           Phone: <a class="link p-1" target="_blank" href="tel:+19712015990">
             (971) 201-5990
           </a>

@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="min-h-52 h-full w-auto rounded p-4 mb-4 bg-neutral-200 flex flex-col gap-1"
+  class="min-h-52 h-full w-auto rounded p-4 mb-4 bg-indigo-50 flex flex-col gap-1"
 >
 {#if image}
   <img class="self-center h-24" src={image} alt="">
