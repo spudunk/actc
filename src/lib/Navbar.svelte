@@ -1,17 +1,31 @@
 <script lang="ts">
+  import Logo from "$lib/icons/Logo.svelte";
+  import { page } from "$app/stores";
+  $: home = $page.url.pathname === "/";
+  let y = 0;
+  $: atTop = y < 25;
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 <header
-  class="z-50 fixed top-0 left-0 w-full backdrop-blur-sm bg-stone-800 bg-opacity-80"
+  class={`${$$props.class} z-50 fixed top-0 left-0 w-full backdrop-blur-sm bg-stone-800 bg-opacity-80`}
 >
   <div
     class="container w-full grid grid-cols-nav justify-between items-center py-2 min-h-12"
   >
     <a href="/" class="flex gap-2 items-center">
+      <Logo
+        class={`fill-white text-white h-full transition-all duration-200 ${
+          atTop && home && $page.status == 200 ? "h-16 sm:h-24" : "h-12"
+        } 
+      `}
+      />
       <span class="text-2xl text-white hidden sm:inline-block"
         >A Custom Touch Construction</span
       >
     </a>
+    <div></div>
 
     <div class="flex flex-row-reverse">
       <a
