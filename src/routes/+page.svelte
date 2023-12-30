@@ -3,7 +3,45 @@
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
+  import Google from "$lib/icons/google.svg";
   import SEO from "$lib/SEO.svelte";
+  import Carousel from "$lib/Carousel.svelte";
+  const images = [
+    { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
+    { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
+    {
+      id: "3",
+      path: "/images/gallery/decks and covers (3).jpg",
+      alt: "deck cover",
+    },
+    {
+      id: "4",
+      path: "/images/gallery/decks and covers.jpg",
+      alt: "deck cover",
+    },
+    { id: "5", path: "/images/gallery/flooring (2).jpg", alt: "flooring" },
+    { id: "6", path: "/images/gallery/flooring (4).jpg", alt: "flooring" },
+    { id: "7", path: "/images/gallery/job pictures68.jpg", alt: "siding" },
+    { id: "8", path: "/images/gallery/job pictures74.jpg", alt: "siding" },
+    { id: "9", path: "/images/gallery/job pictures77.jpg", alt: "siding" },
+    {
+      id: "10",
+      path: "/images/gallery/job pictures80.jpg",
+      alt: "kitchen in progress",
+    },
+    {
+      id: "11",
+      path: "/images/gallery/job pictures84.jpg",
+      alt: "finished bath",
+    },
+    { id: "12", path: "/images/gallery/job pictures98.jpg", alt: "kitchen" },
+    { id: "13", path: "/images/gallery/job pictures99.jpg", alt: "kitchen" },
+    { id: "14", path: "/images/gallery/kitchens3.jpg", alt: "kitchen" },
+    { id: "15", path: "/images/gallery/out bldgs2.jpg", alt: "out building" },
+    { id: "16", path: "/images/gallery/siding (2).jpg", alt: "siding" },
+    { id: "17", path: "/images/gallery/siding & painting.jpg", alt: "siding" },
+    { id: "18", path: "/images/gallery/windows (2).jpg", alt: "siding" },
+  ];
 </script>
 
 <SEO />
@@ -86,10 +124,27 @@
         </p>
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
+      <p class="mt-4 text-xl flex items-center gap-2">
+        <img class="h-6 inline-block" src={Google} alt="Google logo" />
+        <span> Our Google reviews:</span>
+        <a
+          target="_blank"
+          class="link p-2"
+          href="https://www.google.com/search?q=a+custom+touch+construction+north+plains+oregon&sca_esv=594646980&sxsrf=AM9HkKkqMoXOEfLK7fnOO5erzKOYaSqQ_Q%3A1703975197858&source=hp&ei=HZmQZZmVMZDk0PEP45Gk8Ag&iflsig=AO6bgOgAAAAAZZCnLUTSHe3eBreqmDA09YNF-jK6KmE0&oq=a+custom+touch+construction+north+plains+&gs_lp=Egdnd3Mtd2l6IilhIGN1c3RvbSB0b3VjaCBjb25zdHJ1Y3Rpb24gbm9ydGggcGxhaW5zICoCCAAyBRAhGKABMgUQIRigATIFECEYoAFIhTlQAFivLnABeACQAQCYAcwBoAHjKaoBBjAuMzEuMbgBA8gBAPgBAvgBAagCCsICBxAjGOoCGCfCAgQQIxgnwgIKECMYgAQYigUYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICDhAuGIAEGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgUQLhiABMICDhAuGIAEGLEDGIMBGNQCwgILEC4YgAQYsQMYgwHCAgUQABiABMICCBAuGLEDGIAEwgILEC4YgAQYsQMY1ALCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgILEC4YrwEYxwEYgATCAgYQABgWGB7CAggQABgWGB4YD8ICCxAAGIAEGIoFGIYDwgIFECEYqwI&sclient=gws-wiz#lrd=0x48726993c8426b19:0x4a10e8457558261f,1,,,,"
+          >A Custom Touch Construction</a
+        >
+      </p>
     </div>
   </section>
 
-  <section id="contact" class="my-8">
+  <section id="gallery">
+    <div class="container">
+      <h2 class="text-3xl mb-4">Gallery</h2>
+      <Carousel {images} />
+    </div>
+  </section>
+
+  <section id="contact" class="my-16">
     <div class="container">
       <h2 class="text-3xl mb-4">Contact</h2>
       <div class="flex flex-col gap-2">
