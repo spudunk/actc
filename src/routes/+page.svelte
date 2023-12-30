@@ -64,25 +64,24 @@
         skills and techniques have improved over 27 years, the core values have
         remained the same.
       </p>
-      <div class="text-lg px-1 py-2 rounded bg-slate-200 flex flex-col gap-2">
-        <p>
-          <span class="text-2xl h-2 inline-block">&ldquo;</span> I was tired of seeing
-          constumers get screwed by contractors. It’s all about the constumer for
-          me.
+      <div class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2">
+        <p class="relative ml-4">
+          <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span>
+          I was tired of seeing constumers get *** by contractors. It’s all about
+          the constumer for me.
         </p>
-        <p>
+        <p class="ml-4">
           I don’t have a single CCB complaint. I acknowledge my mistakes and
           work to make things right. I don’t leave until they’re happy.
         </p>
-        <p class="font-bold text-green-900 text-xl">
+        <p class="font-bold text-green-900 text-xl ml-4">
           I’d rather lose money than leave an unhappy customer.
         </p>
-        <p>
-          The damage to my reputation is just not worth it. <span
-            class="text-2xl h-2 inline-block">&rdquo;</span
-          >
+        <p class="ml-4">
+          The damage to my reputation is just not worth it.
+          <span class="text-2xl h-2 inline-block"> &rdquo; </span>
         </p>
-        <p class="font-bold">- Mike Shurts</p>
+        <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
     </div>
   </section>
