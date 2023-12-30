@@ -33,12 +33,12 @@
     <div class="flex flex-row-reverse">
       <a
         href="#contact"
-        class="hidden sm:inline-block text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
+        class="hidden sm:inline-block text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 hover:bg-neutral-300 hover:scale-105 transition-all"
         >Contact Us</a
       >
       <a
         href="tel:+19712015990"
-        class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
+        class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 "
         >Call Now</a
       >
     </div>
