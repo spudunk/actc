@@ -26,6 +26,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.0.18",
     "@fontsource/noto-sans": "^5.0.18",
     "@fontsource/noto-serif": "^5.0.18",
     "lucide-svelte": "^0.302.0"

@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         notoSans: "Noto Sans",
         notoSerif: "Noto Serif",
+        display: 'Bebas Neue',
       },
       backgroundImage: {
         kitchen: "url('/images/gallery/job pictures99.jpg')"

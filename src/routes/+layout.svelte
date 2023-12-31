@@ -3,6 +3,7 @@
   import "../app.css";
   import "@fontsource/noto-sans";
   import "@fontsource/noto-serif";
+  import "@fontsource/bebas-neue";
 </script>
 
 <Navbar />

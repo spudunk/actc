@@ -10,7 +10,7 @@
 <svelte:window bind:scrollY={y} />
 
 <header
-  class={`${$$props.class} ${
+  class={`${$$props.class || ''} ${
     expand ? "bg-opacity-0" : "bg-opacity-80 backdrop-blur-sm"
   } z-50 fixed top-0 left-0 w-full bg-neutral-800 transition-all duration-300`}
 >
@@ -20,7 +20,7 @@
     <a href="/" class="flex gap-2 items-center">
       <Logo
         class={`fill-white text-white transition-all duration-200 ${
-          expand ? "h-16 sm:h-24" : "h-12"
+          expand ? "h-16 sm:h-24" : "h-[var(--nav-height)]"
         } 
       `}
       />
