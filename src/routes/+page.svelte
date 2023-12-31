@@ -52,15 +52,11 @@
     id="hero"
     class="-z-10 relative min-h-[90vh] flex flex-col justify-center"
   >
-    <div class="absolute top-0 left-0 bottom-0 right-0">
-      <img
-        class="h-full w-full blur-sm"
-        src="/images/gallery/job pictures99.jpg"
-        alt="Kitchen Remodel"
-      />
-    </div>
     <div
-      class="mix-blend-multiply opacity-80 absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-b from-neutral-500 via-neutral-950 to-neutral-500"
+      class="absolute top-0 left-0 bottom-0 right-0 overflow-x-clip bg-kitchen bg-cover bg-center"
+    ></div>
+    <div
+      class="mix-blend-multiply backdrop-blur opacity-80 absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-b from-neutral-500 via-neutral-950 to-neutral-500"
     ></div>
     <div
       class="absolute top-0 left-0 bottom-0 right-0 container flex flex-col gap-6 justify-center items-center text-center h-full"

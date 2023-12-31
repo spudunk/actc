@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         notoSans: "Noto Sans",
         notoSerif: "Noto Serif",
+      },
+      backgroundImage: {
+        kitchen: "url('/images/gallery/job pictures99.jpg')"
       }
     },
   },
