@@ -12,7 +12,7 @@
 <header
   class={`${$$props.class} ${
     expand ? "bg-opacity-0" : "bg-opacity-80"
-  } z-50 fixed top-0 left-0 w-full backdrop-blur-sm bg-amber-950 transition-all duration-300`}
+  } z-50 fixed top-0 left-0 w-full backdrop-blur-sm bg-neutral-800 transition-all duration-300`}
 >
   <div
     class="container w-full grid grid-cols-nav justify-between items-center py-2 min-h-12"

@@ -50,10 +50,20 @@
 <main class="relative">
   <section
     id="hero"
-    class="min-h-[90vh] bg-gradient-to-b from-amber-950 via-neutral-900 to-neutral-800 flex flex-col justify-center"
+    class="-z-10 relative min-h-[90vh] flex flex-col justify-center"
   >
+    <div class="absolute top-0 left-0 bottom-0 right-0">
+      <img
+        class="h-full w-full blur-sm"
+        src="/images/gallery/job pictures99.jpg"
+        alt="Kitchen Remodel"
+      />
+    </div>
     <div
-      class="container flex flex-col gap-6 justify-center items-center text-center h-full"
+      class="mix-blend-multiply opacity-80 absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-b from-neutral-500 via-neutral-950 to-neutral-500"
+    ></div>
+    <div
+      class="absolute top-0 left-0 bottom-0 right-0 container flex flex-col gap-6 justify-center items-center text-center h-full"
     >
       <p class=" md:hidden text-xl text-neutral-200">
         A Custom Touch Construction
@@ -105,7 +115,9 @@
         skills and techniques have improved over 27 years, the core values have
         remained the same.
       </p>
-      <div class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2 font-serif">
+      <div
+        class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2 font-serif"
+      >
         <p class="relative ml-4">
           <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
           >
