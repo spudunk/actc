@@ -18,4 +18,7 @@
     <h2 class="text-2xl font-display text-center">{title}</h2>
   {/if}
   <div class="flex flex-col gap-2"><slot /></div>
+  {#if link}
+    <a class=" pt-4 pl-2 text-lg font-bold link self-center" href={link}>About {title}</a>
+  {/if}
 </div>
