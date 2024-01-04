@@ -4,6 +4,7 @@
   import "@fontsource/noto-sans";
   import "@fontsource/noto-serif";
   import "@fontsource/bebas-neue";
+  const date = new Date();
 </script>
 
 <Navbar />
@@ -53,8 +54,9 @@
         class="inline-block"
         target="_blank"
         href="https://egov.sos.state.or.us/br/pkg_web_name_srch_inq.do_name_srch?p_name=&p_regist_nbr=195440293&p_srch=PHASE1&p_print=FALSE&p_entity_status=ACTINA"
-        >&copy; 2023 A CUSTOM TOUCH CONSTRUCTION</a
       >
+        &copy; 2023 &dash; {date.getFullYear()} A CUSTOM TOUCH CONSTRUCTION
+      </a>
     </div>
   </div>
 </footer>

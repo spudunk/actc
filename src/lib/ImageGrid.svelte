@@ -3,7 +3,6 @@
   export let images: Image[];
   export let debug = false;
   let selected: undefined | Image;
-  $: console.log(selected);
 </script>
 
 <div
@@ -34,13 +33,15 @@
 
 {#if selected}
   <button
-    class="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-slate-300"
+    class="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-slate-300 rounded overflow-clip"
     on:click={() => {
       selected = undefined;
-      
     }}
   >
-    <img class="max-w-full max-h-screen pt-20 pb-2 px-2" src={selected.path} alt={selected.alt} />
-    <span class="fixed top-24 right-6 text-3xl py-1 px-2 bg-white rounded">Close</span>
+    <img
+      class="max-w-full max-h-screen pt-20 pb-2 px-2"
+      src={selected.path}
+      alt={selected.alt}
+    />
   </button>
 {/if}

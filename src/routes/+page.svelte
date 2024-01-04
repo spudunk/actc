@@ -65,7 +65,8 @@
         A Custom Touch Construction
       </p>
       <h1 class="text-3xl sm:text-4xl md:text-5xl text-neutral-200">
-        The Better Remodel Contractor for <br class="hidden md:inline" /> Portland and Surrounding Areas
+        The Better Remodel Contractor for <br class="hidden md:inline" /> Portland
+        and Surrounding Areas
       </h1>
       <p class="text-xl sm:text-2xl md:text-3xl text-neutral-200">
         Proudly improving homes since 1995
@@ -83,7 +84,7 @@
           <li>Secure your home</li>
         </ul>
       </Card>
-      <Card title={"Siding"} image={MdiHouseSiding}>
+      <Card title={"Siding"} image={MdiHouseSiding} link="/siding">
         <p>
           Long lasting exteriors to keep the outside out and look great doing it
         </p>
@@ -92,7 +93,7 @@
           <li>Improve fire safety</li>
         </ul>
       </Card>
-      <Card title={"Kitchen & Bath"} image={MdiCountertops}>
+      <Card title={"Kitchen & Bath"} image={MdiCountertops} link="/kitchenbath">
         <p>Build the kitchen of your dreams without the nightmares</p>
         <ul class="list-disc list-inside">
           <li>Prevent mold and mildew by design</li>
