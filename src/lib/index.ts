@@ -1,4 +1,2 @@
 // place files you want to import through the `$lib` alias in this folder.
-export const site = {
-  url: "https://actc.pro"
-}
+export type Image = { id: string; path: string; alt: string };
