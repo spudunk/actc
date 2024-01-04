@@ -76,7 +76,7 @@
     <div
       class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
     >
-      <Card title={"Windows & Doors"} image={MdiDoorOpen}>
+      <Card title={"Windows & Doors"} image={MdiDoorOpen} link="/windowsdoors">
         <p>Expert installation for longevity and energy efficiency</p>
         <ul class="list-disc list-inside">
           <li>Reduce your heating and cooling bill</li>
