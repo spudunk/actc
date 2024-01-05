@@ -5,7 +5,7 @@
   import MdiDoorOpen from "$lib/icons/door_open_FILL0_wght400_GRAD0_opsz24.svg";
   import Google from "$lib/icons/google.svg";
   import Yelp from "$lib/icons/yelp_burst.svg";
-  import SEO from "$lib/SEO.svelte";
+  import SEO from "$lib/SEO/MetaTags.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import { site } from "$lib";
   const images = [
@@ -168,23 +168,7 @@
   <section id="contact" class="my-16">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Contact</h2>
-      <div class="flex flex-col gap-2">
-        <p>Call or Email to start making your home better today.</p>
-        <p class="text-xl">
-          Email: <a
-            class="link p-1"
-            target="_blank"
-            href="mailto:mike@actc.pro"
-          >
-            mike@actc.pro
-          </a>
-        </p>
-        <p class="text-xl">
-          Phone: <a class="link p-1" target="_blank" href="tel:+19712015990">
-            (971) 201-5990
-          </a>
-        </p>
-      </div>
+      <Contact />
     </div>
   </section>
 </main>

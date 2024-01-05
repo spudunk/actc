@@ -1,6 +1,7 @@
 <script lang="ts">
   import Logo from "$lib/Logo.svelte";
   import { page } from "$app/stores";
+  import { site } from "$lib";
   $: home = $page.url.pathname === "/";
   let y = 0;
   $: atTop = y < 25;
@@ -25,7 +26,7 @@
       `}
       />
       <span class="text-2xl text-white hidden md:inline-block"
-        >A Custom Touch Construction</span
+        >{site.company.name}</span
       >
     </a>
     <div></div>
@@ -37,7 +38,7 @@
         >Contact Us</a
       >
       <a
-        href="tel:+19712015990"
+        href={`tel:${site.company.telephone}`}
         class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
         >Call Now</a
       >
