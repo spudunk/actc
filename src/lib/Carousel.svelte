@@ -48,7 +48,7 @@
       &leftarrow;
     </button>
     <span
-      class="text-xl font-bold text-black py-1 px-2 bg-neutral-300 bg-opacity-80 rounded"
+      class="w-10 text-center inline-block text-xl font-bold text-black py-1 px-2 bg-neutral-300 bg-opacity-80 rounded"
     >
       {scrollIndex + 1}
     </span>
