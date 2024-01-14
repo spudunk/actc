@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  export let url = String($page.url);
+  export let url: string;
   export let title = "A Custom Touch Construction - Portland Home Contractor";
   export let description = "A Custom Touch Construction - Contractor Specializing in Windows, Doors, Siding, Kitchen, and Bath - Serving Portland and surrounding areas since 1995";
   export let domain = $page.url.protocol + "//" + $page.url.host;
@@ -33,5 +33,5 @@
     <meta name="twitter:image" content={img} />
   {/if}
 
-  <link rel="“canonical”" href={canonical} />
+  <link rel="canonical" href={canonical} />
 </svelte:head>

@@ -7,6 +7,7 @@
   import Yelp from "$lib/icons/yelp_burst.svg";
   import SEO from "$lib/SEO.svelte";
   import Carousel from "$lib/Carousel.svelte";
+  import { site } from "$lib";
   const images = [
     { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
     { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
@@ -45,7 +46,7 @@
   ];
 </script>
 
-<SEO />
+<SEO url={site.url} />
 
 <main class="relative">
   <section
