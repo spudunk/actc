@@ -2,16 +2,22 @@
   import Logo from "$lib/Logo.svelte";
   import { page } from "$app/stores";
   import { site } from "$lib";
+  import { onMount } from "svelte";
   $: home = $page.url.pathname === "/";
+  let loaded = false;
   let y = 0;
   $: atTop = y < 25;
-  $: expand = atTop && home && $page.status == 200;
+  $: expand = atTop && home && $page.status == 200 && loaded;
+
+  onMount(() => {
+    loaded = true;
+  });
 </script>
 
 <svelte:window bind:scrollY={y} />
 
 <header
-  class={`${$$props.class || ''} ${
+  class={`${$$props.class || ""} ${
     expand ? "bg-opacity-0" : "bg-opacity-80 backdrop-blur-sm"
   } z-50 fixed top-0 left-0 w-full bg-neutral-800 transition-all duration-300`}
 >
