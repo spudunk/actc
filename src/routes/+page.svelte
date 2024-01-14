@@ -7,7 +7,9 @@
   import Yelp from "$lib/icons/yelp_burst.svg";
   import SEO from "$lib/SEO/MetaTags.svelte";
   import Carousel from "$lib/Carousel.svelte";
+  import Contact from "$lib/Contact.svelte";
   import { site } from "$lib";
+  
   const images = [
     { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
     { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
@@ -46,6 +48,7 @@
   ];
 </script>
 
+<SEO url={site.url} />
 <SEO url={site.url} />
 
 <main class="relative">
