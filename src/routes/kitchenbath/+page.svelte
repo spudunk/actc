@@ -2,6 +2,7 @@
   import SEO from "$lib/SEO/MetaTags.svelte";
   import ImageGrid from "$lib/ImageGrid.svelte";
   import Contact from "$lib/Contact.svelte";
+  import { site } from "$lib";
   const images = [
     { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
     { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
@@ -22,7 +23,7 @@
   ];
 </script>
 
-<SEO />
+<SEO url={`${site.url}kitchenbath`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">

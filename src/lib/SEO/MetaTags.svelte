@@ -2,12 +2,12 @@
   import { page } from "$app/stores";
   import { site } from "$lib";
 
-  export let url = String($page.url);
+  export let url: string;
   export let title = site.title;
   export let description = site.description;
   export let domain = $page.url.protocol + "//" + $page.url.host;
   export let img = `${domain}/images/og-optimized.png`;
-  export let type = "website"
+  export let type = "website";
   export let canonical = url;
 </script>
 
@@ -35,5 +35,5 @@
     <meta name="twitter:image" content={img} />
   {/if}
 
-  <link rel="“canonical”" href={canonical} />
+  <link rel="canonical" href={canonical} />
 </svelte:head>
