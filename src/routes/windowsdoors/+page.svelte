@@ -18,7 +18,7 @@
   ];
 </script>
 
-<SEO url={`${site.url}windowsdoors`} />
+<SEO url={`${site.url}/windowsdoors`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">

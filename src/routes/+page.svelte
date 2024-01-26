@@ -1,51 +1,12 @@
-<script>
+<script lang="ts">
   import Card from "$lib/Card.svelte";
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/door_open_FILL0_wght400_GRAD0_opsz24.svg";
-  import Google from "$lib/icons/google.svg";
-  import Yelp from "$lib/icons/yelp_burst.svg";
   import SEO from "$lib/SEO/MetaTags.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
-  import { site } from "$lib";
-  
-  const images = [
-    { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
-    { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
-    {
-      id: "11",
-      path: "/images/gallery/job pictures84.jpg",
-      alt: "finished bath",
-    },
-    {
-      id: "3",
-      path: "/images/gallery/decks and covers (3).jpg",
-      alt: "deck cover",
-    },
-    {
-      id: "4",
-      path: "/images/gallery/decks and covers.jpg",
-      alt: "deck cover",
-    },
-    { id: "5", path: "/images/gallery/flooring (2).jpg", alt: "flooring" },
-    { id: "6", path: "/images/gallery/flooring (4).jpg", alt: "flooring" },
-    { id: "7", path: "/images/gallery/job pictures68.jpg", alt: "siding" },
-    { id: "8", path: "/images/gallery/job pictures74.jpg", alt: "siding" },
-    { id: "9", path: "/images/gallery/job pictures77.jpg", alt: "siding" },
-    {
-      id: "10",
-      path: "/images/gallery/job pictures80.jpg",
-      alt: "kitchen in progress",
-    },
-    { id: "13", path: "/images/gallery/job pictures99.jpg", alt: "kitchen" },
-    { id: "12", path: "/images/gallery/job pictures98.jpg", alt: "kitchen" },
-    { id: "14", path: "/images/gallery/kitchens3.jpg", alt: "kitchen" },
-    { id: "15", path: "/images/gallery/out bldgs2.jpg", alt: "out building" },
-    { id: "16", path: "/images/gallery/siding (2).jpg", alt: "siding" },
-    { id: "17", path: "/images/gallery/siding & painting.jpg", alt: "siding" },
-    { id: "18", path: "/images/gallery/windows (2).jpg", alt: "siding" },
-  ];
+  import { site, homeGallery as gallery } from "$lib";
 </script>
 
 <SEO url={site.url} />
@@ -66,14 +27,14 @@
       class="font-display font-light absolute top-0 left-0 bottom-0 right-0 container flex flex-col gap-6 justify-center items-center text-center h-full"
     >
       <p class=" md:hidden text-xl text-neutral-200">
-        A Custom Touch Construction
+        {site.company.name}
       </p>
       <h1 class="text-3xl sm:text-4xl md:text-5xl text-neutral-200">
         The Better Remodel Contractor for <br class="hidden md:inline" /> Portland
         and Surrounding Areas
       </h1>
       <p class="text-xl sm:text-2xl md:text-3xl text-neutral-200">
-        Proudly improving homes since 1995
+        {site.subheading}
       </p>
     </div>
   </section>
@@ -138,33 +99,30 @@
         </p>
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
-      <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-        <img class="h-6 inline-block" src={Google} alt="Google logo" />
-        <a
-          target="_blank"
-          class="link p-2"
-          href="https://www.google.com/search?q=a+custom+touch+construction+north+plains+oregon&sca_esv=594646980&sxsrf=AM9HkKkqMoXOEfLK7fnOO5erzKOYaSqQ_Q%3A1703975197858&source=hp&ei=HZmQZZmVMZDk0PEP45Gk8Ag&iflsig=AO6bgOgAAAAAZZCnLUTSHe3eBreqmDA09YNF-jK6KmE0&oq=a+custom+touch+construction+north+plains+&gs_lp=Egdnd3Mtd2l6IilhIGN1c3RvbSB0b3VjaCBjb25zdHJ1Y3Rpb24gbm9ydGggcGxhaW5zICoCCAAyBRAhGKABMgUQIRigATIFECEYoAFIhTlQAFivLnABeACQAQCYAcwBoAHjKaoBBjAuMzEuMbgBA8gBAPgBAvgBAagCCsICBxAjGOoCGCfCAgQQIxgnwgIKECMYgAQYigUYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICDhAuGIAEGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgUQLhiABMICDhAuGIAEGLEDGIMBGNQCwgILEC4YgAQYsQMYgwHCAgUQABiABMICCBAuGLEDGIAEwgILEC4YgAQYsQMY1ALCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgILEC4YrwEYxwEYgATCAgYQABgWGB7CAggQABgWGB4YD8ICCxAAGIAEGIoFGIYDwgIFECEYqwI&sclient=gws-wiz#lrd=0x48726993c8426b19:0x4a10e8457558261f,1,,,,"
-        >
-          Google Reviews
-        </a>
-      </p>
-      <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-        <img class="h-6 inline-block" src={Yelp} alt="Yelp logo" />
-        <a
-          target="_blank"
-          class="link p-2"
-          href="https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2#reviews"
-        >
-          Yelp Reviews
-        </a>
-      </p>
+
+      {#each site.socials as social}
+        {#if social.reviewLink && social.reviewText}
+          
+        <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
+          <img class="h-6 inline-block" src={social.icon} alt={social.iconAlt} />
+          <a
+            target="_blank"
+            class="link p-2"
+            href={social.reviewLink}
+          >
+            {social.reviewText}
+          </a>
+        </p>
+        {/if}
+      {/each}
+
     </div>
   </section>
 
   <section id="gallery">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Gallery</h2>
-      <Carousel {images} />
+      <Carousel {gallery} />
     </div>
   </section>
 

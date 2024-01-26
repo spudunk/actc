@@ -4,7 +4,7 @@
 
 <div class="flex flex-col gap-4">
   <p class="text-lg">Call or Email to start improving your home today.</p>
-  <p class="text-xl">
+  <p class="text-xl break-words">
     Email: <a
       class="link p-1"
       target="_blank"

@@ -23,7 +23,7 @@
   ];
 </script>
 
-<SEO url={`${site.url}kitchenbath`} />
+<SEO url={`${site.url}/kitchenbath`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">

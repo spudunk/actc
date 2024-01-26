@@ -1,6 +1,5 @@
 <script lang="ts">
-import { serializeSchema } from "$lib";
-  import type { Schema } from "$lib";
+  import { serializeSchema, type Schema } from "$lib/schemas";
 
   export let schema: Schema;
 </script>

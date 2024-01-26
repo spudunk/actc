@@ -12,7 +12,7 @@
   ];
 </script>
 
-<SEO url={`${site.url}siding`} />
+<SEO url={`${site.url}/siding`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">
