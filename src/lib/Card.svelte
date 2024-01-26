@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="min-h-52 h-full w-auto rounded p-4 mb-4 bg-neutral-200 flex flex-col gap-1 shadow-md"
+  class="min-h-52 h-full w-full rounded p-4 mb-4 bg-neutral-200 flex flex-col gap-1 shadow-md"
 >
   {#if link}
     {#if image}
