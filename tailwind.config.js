@@ -14,13 +14,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        notoSans: "Noto Sans",
-        notoSerif: "Noto Serif",
-        display: 'Bebas Neue',
+        notoSans: ["Noto Sans", "sans-serif"],
+        notoSerif: ["Noto Serif", "serif"],
+        display: ["Bebas Neue", "sans-serif"],
       },
       backgroundImage: {
-        kitchen: "url('/images/gallery/job pictures99.jpg')"
-      }
+        kitchen: "url('/images/gallery/job pictures99.jpg')",
+      },
     },
   },
   plugins: [],
