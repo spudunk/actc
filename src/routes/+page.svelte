@@ -14,6 +14,11 @@
     { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
     { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
     {
+      id: "11",
+      path: "/images/gallery/job pictures84.jpg",
+      alt: "finished bath",
+    },
+    {
       id: "3",
       path: "/images/gallery/decks and covers (3).jpg",
       alt: "deck cover",
@@ -33,13 +38,8 @@
       path: "/images/gallery/job pictures80.jpg",
       alt: "kitchen in progress",
     },
-    {
-      id: "11",
-      path: "/images/gallery/job pictures84.jpg",
-      alt: "finished bath",
-    },
-    { id: "12", path: "/images/gallery/job pictures98.jpg", alt: "kitchen" },
     { id: "13", path: "/images/gallery/job pictures99.jpg", alt: "kitchen" },
+    { id: "12", path: "/images/gallery/job pictures98.jpg", alt: "kitchen" },
     { id: "14", path: "/images/gallery/kitchens3.jpg", alt: "kitchen" },
     { id: "15", path: "/images/gallery/out bldgs2.jpg", alt: "out building" },
     { id: "16", path: "/images/gallery/siding (2).jpg", alt: "siding" },
