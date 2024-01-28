@@ -9,11 +9,13 @@
   import SEO from "$lib/SEO/MetaTags.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
+  import LdTag from "$lib/SEO/LDTag.svelte";
   import { site, homeGallery as gallery } from "$lib";
+  import { organizationSchema } from "$lib/schemas";
 </script>
 
 <SEO url={site.url} />
-<SEO url={site.url} />
+<LdTag schema={organizationSchema} />
 
 <main class="relative">
   <section
