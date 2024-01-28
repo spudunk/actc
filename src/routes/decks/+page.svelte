@@ -2,34 +2,34 @@
   import SEO from "$lib/SEO/MetaTags.svelte";
   import ImageGrid from "$lib/ImageGrid.svelte";
   import Contact from "$lib/Contact.svelte";
-  import { site, sidingGallery as gallery } from "$lib";
+  import { site, decksGallery as gallery } from "$lib";
 
 </script>
 
-<SEO url={`${site.url}/siding`} />
+<SEO url={`${site.url}/decks`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">
     <div class="container">
-      <h1 class="text-4xl mb-4 font-display">Siding</h1>
+      <h1 class="text-4xl mb-4 font-display">Decks & Covers</h1>
       <p class="text-xl my-4 max-w-prose">
-        Protect your home under all conditions.
+        Outdoor spaces for all occasions
       </p>
       <p class="text-lg my-2 max-w-prose">
-        Under normal conditions, your roof keeps most of the weather out of your
-        walls and framing. But, extreme weather, fire, and pests attack from the
-        sides.
+       
       </p>
       <p class="text-lg my-2 max-w-prose">
-        If threats make it past the siding, there's nothing left to stop them
-        from destroying your home from the inside out.
+       
       </p>
       <p class="text-lg my-2 max-w-prose">
-        Let us help you choose and professionally install high quality siding
-        that will protect your home for decades to come.
+       
       </p>
-      <!-- <p class="text-lg my-2 max-w-prose"></p> -->
-      <!-- <p class="text-lg my-2 max-w-prose"></p> -->
+      <p class="text-lg my-2 max-w-prose">
+    
+      </p>
+      <p class="text-lg my-2 max-w-prose">
+   
+      </p>
     </div>
   </section>
 

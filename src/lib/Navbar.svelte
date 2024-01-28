@@ -3,6 +3,7 @@
   import { page } from "$app/stores";
   import { site } from "$lib";
   import { onMount } from "svelte";
+  import SocialIcons from "./SocialIcons.svelte";
   $: home = $page.url.pathname === "/";
   let loaded = false;
   let y = 0;
@@ -37,7 +38,7 @@
     </a>
     <div></div>
 
-    <div class="flex flex-row-reverse">
+    <div class="flex flex-row-reverse gap-4">
       <a
         href="#contact"
         class="hidden sm:inline-block text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200 hover:bg-neutral-100 hover:scale-105 transition-all"
@@ -48,9 +49,16 @@
         class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
         >Call Now</a
       >
+      <SocialIcons class='hidden lg:flex h-7' />
     </div>
   </div>
 </header>
+
+<nav class="fixed lg:hidden bottom-0 left-0 right-0 w-full h-fit py-2 bg-stone-200 bg-opacity-90 z-40">
+  <div class="container flex justify-end">
+    <SocialIcons class="" />
+  </div>
+</nav>
 
 <style>
   .grid-cols-nav {

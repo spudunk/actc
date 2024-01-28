@@ -60,7 +60,7 @@ type LocationPage = {
 };
 export type Locations = { [key: string]: LocationPage };
 
-type Image = { id: string; alt: string; };
+type Image = { id: string; alt: string; filename: string };
 export type ImageGallery = {
   basePath: string;
   images: Image[];

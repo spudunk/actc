@@ -39,11 +39,11 @@
   </section>
   <section id="services" class="">
     <div
-      class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
+      class="container w-full -mt-12 -mb-12 grid sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8"
     >
       <Card title={"Windows & Doors"} image={MdiDoorOpen} link="/windowsdoors">
         <p>Expert installation for longevity and energy efficiency</p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Reduce your heating and cooling bill</li>
           <li>Secure your home</li>
         </ul>
@@ -52,17 +52,42 @@
         <p>
           Long lasting exteriors to keep the outside out and look great doing it
         </p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Protect your home for decades</li>
           <li>Improve fire safety</li>
         </ul>
       </Card>
       <Card title={"Kitchen & Bath"} image={MdiCountertops} link="/kitchenbath">
         <p>Build the kitchen of your dreams without the nightmares</p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Prevent mold and mildew by design</li>
-          <li>Live healthier and love home more</li>
+          <li>Love your healthier home more</li>
           <li>Impress with true craftsmanship</li>
+        </ul>
+      </Card>
+      <Card title={"Flooring"} image={MdiCountertops} link="/flooring">
+        <p>Floors that will look great and last a long time</p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Easier cleaning</li>
+          <li>Smooth and seamless thresholds</li>
+          <li>Enjoy walking barefoot again</li>
+        </ul>
+      </Card>
+      <Card title={"Decks & Covers"} image={MdiCountertops} link="/decks">
+        <p>Enjoy the outdoors from the comfort of your home</p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Custom decks for all occasions</li>
+          <li>Standalone outbuildings</li>
+          <li>Be "oudoorsy", enjoy wine on the deck</li>
+        </ul>
+      </Card>
+      <Card title={"Dryrot Repair"} image={MdiCountertops} link="/dryrot">
+        <p>
+          Fix framing behind the sheetrock to maximize the life of your remodel
+        </p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Replace studs and headers</li>
+          <li>Give tired doorframes a new life</li>
         </ul>
       </Card>
     </div>
@@ -101,27 +126,30 @@
 
       {#each site.socials as social}
         {#if social.reviewLink && social.reviewText}
-          
-        <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-          <img class="h-6 inline-block" src={social.icon} alt={social.iconAlt} />
-          <a
-            target="_blank"
-            class="link p-2"
-            href={social.reviewLink}
-          >
-            {social.reviewText}
-          </a>
-        </p>
+          <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
+            <img
+              class="h-6 inline-block"
+              src={social.icon}
+              alt={social.iconAlt}
+            />
+            <a target="_blank" class="link p-2" href={social.reviewLink}>
+              {social.reviewText}
+            </a>
+          </p>
         {/if}
       {/each}
-
     </div>
   </section>
 
   <section id="gallery">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Gallery</h2>
-      <Carousel {gallery} />
+      <Carousel {gallery} debug />
+      <p class="my-4">
+        <a href="#services" class="link text-lg"
+          >More photos on Service Pages &UpArrow;
+        </a>
+      </p>
     </div>
   </section>
 
