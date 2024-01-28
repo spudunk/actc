@@ -6,7 +6,6 @@
   import MdiMop from "$lib/icons/mop_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDeck from "$lib/icons/deck_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCarpenter from "$lib/icons/carpenter_FILL0_wght400_GRAD0_opsz24.svg";
-
   // Components
   import SEO from "$lib/SEO/MetaTags.svelte";
   import LdTag from "$lib/SEO/LDTag.svelte";
@@ -14,7 +13,6 @@
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
   import ReviewLinks from "$lib/ReviewLinks.svelte";
-
   // Data
   import { site, homeGallery as gallery } from "$lib";
   import { organizationSchema } from "$lib/schemas";
@@ -25,7 +23,7 @@
   <link
     rel="preload"
     as="image"
-    href="https://marksmanexteriors.com/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw/8d1dfa22-0e73-40e2-2edf-3218fede6400/public"
+    href="https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw/cb913a2d-0214-4b3b-956a-6e91585c2700/public"
   />
 </svelte:head>
 
