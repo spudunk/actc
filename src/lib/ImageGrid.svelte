@@ -19,7 +19,9 @@
       }}
     >
       {#if debug}
-        <span class="absolute top-2 right-2 p-1 bg-neutral-50 bg-opacity-50 text-right">
+        <span
+          class="absolute top-2 right-2 p-1 bg-neutral-50 bg-opacity-50 text-right"
+        >
           <!-- {image.id}<br /> -->
           {image.filename}
         </span>
@@ -30,7 +32,7 @@
         srcset={`${gallery.basePath}/${image.id}/h=320, ${gallery.basePath}/${image.id}/h=640 2x`}
         alt={image.alt}
         id={image.id}
-        class="max-h-60 md:h-72 lg:h-80 w-auto rounded"
+        class="max-h-[30rem] sm:max-h-72 w-auto rounded"
       />
     </button>
   {/each}
