@@ -14,7 +14,7 @@
 <LdTag schema={websiteSchema} />
 <Navbar />
 <slot />
-<footer class="my-8">
+<footer class="mt-8 mb-16 lg:my-8">
   <div class="container min-h-12">
     <div class="w-fit mx-auto text-center flex flex-col">
       <div class="flex flex-wrap gap-1 w-full justify-center mb-2">

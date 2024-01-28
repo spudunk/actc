@@ -108,9 +108,10 @@
       >
         {#if debug}
           <span
-            class="absolute top-2 left-0 p-1 z-10 bg-neutral-50 bg-opacity-80"
+            class="absolute top-2 right-2 p-1 z-10 bg-neutral-50 bg-opacity-80 text-right"
           >
-            {image.id}
+            <!-- {image.id} <br /> -->
+            {image.filename}
           </span>
         {/if}
         <img

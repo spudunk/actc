@@ -2,20 +2,8 @@
   import SEO from "$lib/SEO/MetaTags.svelte";
   import ImageGrid from "$lib/ImageGrid.svelte";
   import Contact from "$lib/Contact.svelte";
-  import { site } from "$lib";
-  const images = [
-    { id: "8", path: "/images/gallery/job pictures74.jpg", alt: "siding" },
-    {
-      id: "4",
-      path: "/images/gallery/decks and covers.jpg",
-      alt: "deck cover",
-    },
-    { id: "7", path: "/images/gallery/job pictures68.jpg", alt: "siding" },
-    { id: "9", path: "/images/gallery/job pictures77.jpg", alt: "siding" },
-    { id: "16", path: "/images/gallery/siding (2).jpg", alt: "siding" },
-    { id: "17", path: "/images/gallery/siding & painting.jpg", alt: "siding" },
-    { id: "18", path: "/images/gallery/windows (2).jpg", alt: "siding" },
-  ];
+  import { site, windowsGallery as gallery } from "$lib";
+
 </script>
 
 <SEO url={`${site.url}/windowsdoors`} />
@@ -57,7 +45,7 @@
   <section id="gallery">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Gallery</h2>
-      <ImageGrid {images} class="bg-neutral-200" />
+      <ImageGrid {gallery} class="bg-neutral-200" />
     </div>
   </section>
 

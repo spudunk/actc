@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Image } from "$lib";
-  export let images: Image[];
-  export let debug = false;
-  let selected: undefined | Image;
+  import type { ImageGallery } from "$lib/types";
+  export let gallery: ImageGallery;
+  export let debug = true;
+  let selected: number | undefined;
 </script>
 
 <div
@@ -10,20 +10,24 @@
     $$props.class ? $$props.class : ""
   } relative rounded px-1 py-4 flex gap-4 w-fit flex-wrap justify-evenly `}
 >
-  {#each images as image (image.id)}
+  {#each gallery.images as image, index (image.id)}
     <button
       class="relative w-fit overflow-clip flex justify-center"
       on:click={() => {
-        selected = image;
+        selected = index;
         document.body.style.overflow = "hidden";
       }}
     >
       {#if debug}
-        <span class="absolute top-2 left-2 p-1 bg-neutral-50">{image.id}</span>
+        <span class="absolute top-2 right-2 p-1 bg-neutral-50 bg-opacity-50 text-right">
+          <!-- {image.id}<br /> -->
+          {image.filename}
+        </span>
       {/if}
       <img
         loading="lazy"
-        src={image.path}
+        src={`${gallery.basePath}/${image.id}/h=320`}
+        srcset={`${gallery.basePath}/${image.id}/h=320, ${gallery.basePath}/${image.id}/h=640 2x`}
         alt={image.alt}
         id={image.id}
         class="max-h-60 md:h-72 lg:h-80 w-auto rounded"
@@ -42,8 +46,8 @@
   >
     <img
       class="max-w-full max-h-screen pt-20 pb-2 px-2"
-      src={selected.path}
-      alt={selected.alt}
+      src={`${gallery.basePath}/${gallery.images[selected].id}/public`}
+      alt={gallery.images[selected].alt}
     />
   </button>
 {/if}
