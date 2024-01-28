@@ -1,18 +1,33 @@
 <script lang="ts">
-  import Card from "$lib/Card.svelte";
+  // Icons
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/door_open_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiMop from "$lib/icons/mop_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDeck from "$lib/icons/deck_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCarpenter from "$lib/icons/carpenter_FILL0_wght400_GRAD0_opsz24.svg";
+
+  // Components
   import SEO from "$lib/SEO/MetaTags.svelte";
+  import LdTag from "$lib/SEO/LDTag.svelte";
+  import Card from "$lib/Card.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
-  import LdTag from "$lib/SEO/LDTag.svelte";
+  import ReviewLinks from "$lib/ReviewLinks.svelte";
+
+  // Data
   import { site, homeGallery as gallery } from "$lib";
   import { organizationSchema } from "$lib/schemas";
 </script>
+
+<svelte:head>
+  <!-- Preload Hero image for Performance -->
+  <link
+    rel="preload"
+    as="image"
+    href="https://marksmanexteriors.com/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw/8d1dfa22-0e73-40e2-2edf-3218fede6400/public"
+  />
+</svelte:head>
 
 <SEO url={site.url} />
 <LdTag schema={organizationSchema} />
@@ -130,20 +145,7 @@
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
 
-      {#each site.socials as social}
-        {#if social.reviewLink && social.reviewText}
-          <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-            <img
-              class="h-6 inline-block"
-              src={social.icon}
-              alt={social.iconAlt}
-            />
-            <a target="_blank" class="link p-2" href={social.reviewLink}>
-              {social.reviewText}
-            </a>
-          </p>
-        {/if}
-      {/each}
+      <ReviewLinks />
     </div>
   </section>
 

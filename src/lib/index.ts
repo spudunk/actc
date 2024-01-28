@@ -10,8 +10,8 @@ export const site: SiteData = {
   title: "A Custom Touch Construction - Portland Home Contractor",
   heading: "The Better Remodel Contractor for Portland and Surrounding Areas",
   subheading: "Proudly improving homes since 1995",
-  about: [], // hardcoded to page
-  services: [], // hardcoded to page
+  aboutCopy: [], // hardcoded to page
+  servicesCopy: [], // hardcoded to page
   products: {
     // hardcoded to page
     description: "",
@@ -83,9 +83,10 @@ export const site: SiteData = {
   ],
 };
 
+const imageBasePath = "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw";
 // Home / Index page
 export const homeGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "7ce2479f-1270-408e-f30c-b29e8f1edc00",
@@ -157,7 +158,7 @@ export const homeGallery: ImageGallery = {
 
 // Kitchen & Bath
 export const kitchenGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "31381092-e8af-4c66-684d-ab8bdae8da00",
@@ -219,7 +220,7 @@ export const kitchenGallery: ImageGallery = {
 
 // Windows & Doors
 export const windowsGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "048627a8-9d19-48a4-0acf-dae6fe1b5400",
@@ -426,7 +427,7 @@ export const windowsGallery: ImageGallery = {
 
 // Siding
 export const sidingGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "b5aef13f-057c-4f9c-a230-404a8aae2500",
@@ -488,7 +489,7 @@ export const sidingGallery: ImageGallery = {
 
 // Decks & Covers
 export const decksGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "ae3e62d8-da2c-4794-f96d-ae7a1c81e100",
@@ -530,7 +531,7 @@ export const decksGallery: ImageGallery = {
 
 // Flooring
 export const flooringGallery: ImageGallery = {
-  basePath: "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw",
+  basePath: imageBasePath,
   images: [
     {
       id: "a9ce9e06-1ea7-42b7-fc83-999b1595ce00",
