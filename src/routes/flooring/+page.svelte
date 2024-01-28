@@ -5,7 +5,7 @@
   import { site, flooringGallery as gallery } from "$lib";
 </script>
 
-<SEO url={`${site.url}/windowsdoors`} />
+<SEO url={`${site.url}/flooring`} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">
