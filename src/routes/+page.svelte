@@ -3,6 +3,9 @@
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/door_open_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiMop from "$lib/icons/mop_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiDeck from "$lib/icons/deck_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiCarpenter from "$lib/icons/carpenter_FILL0_wght400_GRAD0_opsz24.svg";
   import SEO from "$lib/SEO/MetaTags.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
@@ -66,7 +69,7 @@
           <li>Impress with true craftsmanship</li>
         </ul>
       </Card>
-      <Card title={"Flooring"} image={MdiCountertops} link="/flooring">
+      <Card title={"Flooring"} image={MdiMop} link="/flooring">
         <p>Floors that will look great and last a long time</p>
         <ul class="list-disc list-outside pl-4">
           <li>Easier cleaning</li>
@@ -74,7 +77,7 @@
           <li>Enjoy walking barefoot again</li>
         </ul>
       </Card>
-      <Card title={"Decks & Covers"} image={MdiCountertops} link="/decks">
+      <Card title={"Decks & Covers"} image={MdiDeck} link="/decks">
         <p>Enjoy the outdoors from the comfort of your home</p>
         <ul class="list-disc list-outside pl-4">
           <li>Custom decks for all occasions</li>
@@ -82,7 +85,7 @@
           <li>Be "oudoorsy", enjoy wine on the deck</li>
         </ul>
       </Card>
-      <Card title={"Dryrot Repair"} image={MdiCountertops} link="/dryrot">
+      <Card title={"Dryrot Repair"} image={MdiCarpenter} link="/dryrot">
         <p>
           Fix framing behind the sheetrock to maximize the life of your remodel
         </p>
