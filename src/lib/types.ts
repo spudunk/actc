@@ -40,14 +40,14 @@ export type SiteData = {
   description: string;
   heading: string;
   subheading: string;
-  about: string[];
-  services: string[];
-  products: {
+  aboutCopy?: string[];
+  servicesCopy?: string[];
+  products?: {
     description: string;
     lines: ProductLine[];
   };
   company: Company;
-  license: { text: string; url: string };
+  license?: { text: string; url: string };
   socials: Social[];
 };
 
