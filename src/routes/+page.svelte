@@ -150,7 +150,7 @@
   <section id="gallery">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Gallery</h2>
-      <Carousel {gallery} debug />
+      <Carousel {gallery} />
       <p class="my-4">
         <a href="#services" class="link text-lg">
           More photos on Service Pages &UpArrow;
