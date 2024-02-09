@@ -124,8 +124,9 @@
         class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2 font-serif"
       >
         <p class="relative ml-4">
-          <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
-          >
+          <span class="text-2xl h-2 inline-block absolute -left-4">
+            &ldquo;
+          </span>
           I was tired of seeing customers get screwed by contractors. It’s all about
           the customer for me.
         </p>
