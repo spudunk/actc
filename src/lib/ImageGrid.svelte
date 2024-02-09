@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { ImageGallery } from "$lib/types";
   export let gallery: ImageGallery;
-  export let debug = true;
+  export let debug = false;
   let selected: number | undefined;
 </script>
 
@@ -12,7 +12,7 @@
 >
   {#each gallery.images as image, index (image.id)}
     <button
-      class="relative w-fit overflow-clip flex justify-center"
+      class="relative w-fit overflow-clip flex justify-center bg-neutral-300"
       on:click={() => {
         selected = index;
         document.body.style.overflow = "hidden";
@@ -27,7 +27,7 @@
         </span>
       {/if}
       <img
-        loading="lazy"
+        loading={index > 2 ? "lazy" : "eager"}
         src={`${gallery.basePath}/${image.id}/h=320`}
         srcset={`${gallery.basePath}/${image.id}/h=320, ${gallery.basePath}/${image.id}/h=640 2x`}
         alt={image.alt}
