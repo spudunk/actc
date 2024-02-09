@@ -4,7 +4,11 @@
   const copy = {
     h1: "Decks & Covers",
     subheading: "Outdoor spaces for all occasions",
-    paragraphs: [],
+    paragraphs: [
+      "Decks and covers are not merely extensions of your home; they are gateways to a lifestyle enriched by the great outdoors. From hosting lively gatherings to offering a peaceful escape, a well-designed deck becomes an integral part of your lifestyle.",
+      "Covers offer a protective layer, ensuring you can enjoy your outdoor space in all weather conditions. Shielded from the sun, rain, or snow, your deck becomes a year-round retreat, offering a comfortable escape and expanding your living space.",
+      "In essence, decks and covers are transformative features that seamlessly blend indoor and outdoor living, offering a space for relaxation, entertainment, and increased property appeal.",
+    ],
   };
 </script>
 

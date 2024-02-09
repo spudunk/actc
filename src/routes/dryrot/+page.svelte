@@ -4,7 +4,10 @@
   const copy = {
     h1: "Dryrot Repair",
     subheading: "Your entire remodel hangs on your framing.",
-    paragraphs: [],
+    paragraphs: [
+      "Dry rot might be hidden, but its impact on your home is anything but subtle. Our dry rot repair services go beyond patching up the visible damage; we delve deep to identify and eradicate the root cause. Preserving the structural integrity of your home is our mission.",
+      "Timely dry rot repairs aren't just about aesthetics; they're about safeguarding your investment and ensuring the health of your living space. Trust us to leverage our decades of experience to address dry rot issues comprehensively, protecting your home and securing its foundation for the years to come.",
+    ],
   };
 </script>
 
