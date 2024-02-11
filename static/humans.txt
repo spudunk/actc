@@ -2,12 +2,14 @@
 	Developer: Christopher Hicks
 	Contact: chris [at] webboot.io
 	Twitter: @topher_hicks
+	Bluesky: @spudunk.bsky.social
 	From: Washington, USA
 
 
 /* THANKS */
+	Copywriting: Angel Allen
 		
 
 /* SITE */
-	Last update: 2023/12/29
+	Last update: 2024/02/10
 	Language: English 

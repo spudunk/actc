@@ -1,52 +1,34 @@
-<script>
-  import Card from "$lib/Card.svelte";
+<script lang="ts">
+  // Icons
   import MdiHouseSiding from "$lib/icons/house_siding_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiCountertops from "$lib/icons/countertops_FILL0_wght400_GRAD0_opsz24.svg";
   import MdiDoorOpen from "$lib/icons/door_open_FILL0_wght400_GRAD0_opsz24.svg";
-  import Google from "$lib/icons/google.svg";
-  import Yelp from "$lib/icons/yelp_burst.svg";
-  import SEO from "$lib/SEO.svelte";
+  import MdiMop from "$lib/icons/mop_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiDeck from "$lib/icons/deck_FILL0_wght400_GRAD0_opsz24.svg";
+  import MdiCarpenter from "$lib/icons/carpenter_FILL0_wght400_GRAD0_opsz24.svg";
+  // Components
+  import SEO from "$lib/SEO/MetaTags.svelte";
+  import LdTag from "$lib/SEO/LDTag.svelte";
+  import Card from "$lib/Card.svelte";
   import Carousel from "$lib/Carousel.svelte";
-  import { site } from "$lib";
-  const images = [
-    { id: "1", path: "/images/gallery/baths.jpg", alt: "bath sinks" },
-    { id: "2", path: "/images/gallery/baths2.jpg", alt: "bathtub" },
-    {
-      id: "3",
-      path: "/images/gallery/decks and covers (3).jpg",
-      alt: "deck cover",
-    },
-    {
-      id: "4",
-      path: "/images/gallery/decks and covers.jpg",
-      alt: "deck cover",
-    },
-    { id: "5", path: "/images/gallery/flooring (2).jpg", alt: "flooring" },
-    { id: "6", path: "/images/gallery/flooring (4).jpg", alt: "flooring" },
-    { id: "7", path: "/images/gallery/job pictures68.jpg", alt: "siding" },
-    { id: "8", path: "/images/gallery/job pictures74.jpg", alt: "siding" },
-    { id: "9", path: "/images/gallery/job pictures77.jpg", alt: "siding" },
-    {
-      id: "10",
-      path: "/images/gallery/job pictures80.jpg",
-      alt: "kitchen in progress",
-    },
-    {
-      id: "11",
-      path: "/images/gallery/job pictures84.jpg",
-      alt: "finished bath",
-    },
-    { id: "12", path: "/images/gallery/job pictures98.jpg", alt: "kitchen" },
-    { id: "13", path: "/images/gallery/job pictures99.jpg", alt: "kitchen" },
-    { id: "14", path: "/images/gallery/kitchens3.jpg", alt: "kitchen" },
-    { id: "15", path: "/images/gallery/out bldgs2.jpg", alt: "out building" },
-    { id: "16", path: "/images/gallery/siding (2).jpg", alt: "siding" },
-    { id: "17", path: "/images/gallery/siding & painting.jpg", alt: "siding" },
-    { id: "18", path: "/images/gallery/windows (2).jpg", alt: "siding" },
-  ];
+  import Contact from "$lib/Contact.svelte";
+  import ReviewLinks from "$lib/ReviewLinks.svelte";
+  // Data
+  import { site, homeGallery as gallery } from "$lib";
+  import { organizationSchema } from "$lib/schemas";
 </script>
 
+<svelte:head>
+  <!-- Preload Hero image for Performance -->
+  <link
+    rel="preload"
+    as="image"
+    href="https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw/cb913a2d-0214-4b3b-956a-6e91585c2700/public"
+  />
+</svelte:head>
+
 <SEO url={site.url} />
+<LdTag schema={organizationSchema} />
 
 <main class="relative">
   <section
@@ -63,42 +45,68 @@
       class="font-display font-light absolute top-0 left-0 bottom-0 right-0 container flex flex-col gap-6 justify-center items-center text-center h-full"
     >
       <p class=" md:hidden text-xl text-neutral-200">
-        A Custom Touch Construction
+        {site.company.name}
       </p>
       <h1 class="text-3xl sm:text-4xl md:text-5xl text-neutral-200">
-        The Better Remodel Contractor for <br class="hidden md:inline" /> Portland and Surrounding Areas
+        The Better Remodel Contractor for <br class="hidden md:inline" /> Portland
+        and Surrounding Areas
       </h1>
       <p class="text-xl sm:text-2xl md:text-3xl text-neutral-200">
-        Proudly improving homes since 1995
+        {site.subheading}
       </p>
     </div>
   </section>
   <section id="services" class="">
     <div
-      class="container w-full -mt-12 -mb-12 grid sm:grid-cols-3 justify-items-center gap-8"
+      class="container w-full -mt-12 -mb-12 grid sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8"
     >
-      <Card title={"Windows & Doors"} image={MdiDoorOpen}>
+      <Card title={"Windows & Doors"} image={MdiDoorOpen} link="/windowsdoors">
         <p>Expert installation for longevity and energy efficiency</p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Reduce your heating and cooling bill</li>
           <li>Secure your home</li>
         </ul>
       </Card>
-      <Card title={"Siding"} image={MdiHouseSiding}>
+      <Card title={"Siding"} image={MdiHouseSiding} link="/siding">
         <p>
           Long lasting exteriors to keep the outside out and look great doing it
         </p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Protect your home for decades</li>
           <li>Improve fire safety</li>
         </ul>
       </Card>
-      <Card title={"Kitchen & Bath"} image={MdiCountertops}>
+      <Card title={"Kitchen & Bath"} image={MdiCountertops} link="/kitchenbath">
         <p>Build the kitchen of your dreams without the nightmares</p>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-outside pl-4">
           <li>Prevent mold and mildew by design</li>
-          <li>Live healthier and love home more</li>
+          <li>Love your healthier home more</li>
           <li>Impress with true craftsmanship</li>
+        </ul>
+      </Card>
+      <Card title={"Flooring"} image={MdiMop} link="/flooring">
+        <p>Floors that will look great and last a long time</p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Easier cleaning</li>
+          <li>Smooth and seamless thresholds</li>
+          <li>Enjoy walking barefoot again</li>
+        </ul>
+      </Card>
+      <Card title={"Decks & Covers"} image={MdiDeck} link="/decks">
+        <p>Enjoy the outdoors from the comfort of your home</p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Custom decks for all occasions</li>
+          <li>Standalone outbuildings</li>
+          <li>Be "oudoorsy", enjoy wine on the deck</li>
+        </ul>
+      </Card>
+      <Card title={"Dryrot Repair"} image={MdiCarpenter} link="/dryrot">
+        <p>
+          Fix framing behind the sheetrock to maximize the life of your remodel
+        </p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Replace studs and headers</li>
+          <li>Give tired doorframes a new life</li>
         </ul>
       </Card>
     </div>
@@ -116,8 +124,9 @@
         class="text-lg px-2 py-2 rounded bg-neutral-200 flex flex-col gap-2 font-serif"
       >
         <p class="relative ml-4">
-          <span class="text-2xl h-2 inline-block absolute -left-4">&ldquo;</span
-          >
+          <span class="text-2xl h-2 inline-block absolute -left-4">
+            &ldquo;
+          </span>
           I was tired of seeing customers get screwed by contractors. It’s all about
           the customer for me.
         </p>
@@ -134,56 +143,27 @@
         </p>
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
-      <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-        <img class="h-6 inline-block" src={Google} alt="Google logo" />
-        <a
-          target="_blank"
-          class="link p-2"
-          href="https://www.google.com/search?q=a+custom+touch+construction+north+plains+oregon&sca_esv=594646980&sxsrf=AM9HkKkqMoXOEfLK7fnOO5erzKOYaSqQ_Q%3A1703975197858&source=hp&ei=HZmQZZmVMZDk0PEP45Gk8Ag&iflsig=AO6bgOgAAAAAZZCnLUTSHe3eBreqmDA09YNF-jK6KmE0&oq=a+custom+touch+construction+north+plains+&gs_lp=Egdnd3Mtd2l6IilhIGN1c3RvbSB0b3VjaCBjb25zdHJ1Y3Rpb24gbm9ydGggcGxhaW5zICoCCAAyBRAhGKABMgUQIRigATIFECEYoAFIhTlQAFivLnABeACQAQCYAcwBoAHjKaoBBjAuMzEuMbgBA8gBAPgBAvgBAagCCsICBxAjGOoCGCfCAgQQIxgnwgIKECMYgAQYigUYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICDhAuGIAEGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgUQLhiABMICDhAuGIAEGLEDGIMBGNQCwgILEC4YgAQYsQMYgwHCAgUQABiABMICCBAuGLEDGIAEwgILEC4YgAQYsQMY1ALCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgILEC4YrwEYxwEYgATCAgYQABgWGB7CAggQABgWGB4YD8ICCxAAGIAEGIoFGIYDwgIFECEYqwI&sclient=gws-wiz#lrd=0x48726993c8426b19:0x4a10e8457558261f,1,,,,"
-        >
-          Google Reviews
-        </a>
-      </p>
-      <p class="mt-4 text-xl flex flex-wrap items-center gap-2">
-        <img class="h-6 inline-block" src={Yelp} alt="Yelp logo" />
-        <a
-          target="_blank"
-          class="link p-2"
-          href="https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2#reviews"
-        >
-          Yelp Reviews
-        </a>
-      </p>
+
+      <ReviewLinks />
     </div>
   </section>
 
   <section id="gallery">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Gallery</h2>
-      <Carousel {images} />
+      <Carousel {gallery} />
+      <p class="my-4">
+        <a href="#services" class="link text-lg">
+          More photos on Service Pages &UpArrow;
+        </a>
+      </p>
     </div>
   </section>
 
   <section id="contact" class="my-16">
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Contact</h2>
-      <div class="flex flex-col gap-2">
-        <p>Call or Email to start making your home better today.</p>
-        <p class="text-xl">
-          Email: <a
-            class="link p-1"
-            target="_blank"
-            href="mailto:mike@actc.pro"
-          >
-            mike@actc.pro
-          </a>
-        </p>
-        <p class="text-xl">
-          Phone: <a class="link p-1" target="_blank" href="tel:+19712015990">
-            (971) 201-5990
-          </a>
-        </p>
-      </div>
+      <Contact />
     </div>
   </section>
 </main>

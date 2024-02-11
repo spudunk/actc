@@ -14,13 +14,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        notoSans: "Noto Sans",
-        notoSerif: "Noto Serif",
-        display: 'Bebas Neue',
+        notoSans: ["Noto Sans", "sans-serif"],
+        notoSerif: ["Noto Serif", "serif"],
+        display: ["Bebas Neue", "sans-serif"],
       },
       backgroundImage: {
-        kitchen: "url('/images/gallery/job pictures99.jpg')"
-      }
+        kitchen: "url('https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw/cb913a2d-0214-4b3b-956a-6e91585c2700/public')",
+      },
     },
   },
   plugins: [],
