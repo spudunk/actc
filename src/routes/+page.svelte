@@ -8,14 +8,12 @@
   import MdiCarpenter from "$lib/icons/carpenter_FILL0_wght400_GRAD0_opsz24.svg";
   // Components
   import SEO from "$lib/SEO/MetaTags.svelte";
-  import LdTag from "$lib/SEO/LDTag.svelte";
   import Card from "$lib/Card.svelte";
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
   import ReviewLinks from "$lib/ReviewLinks.svelte";
   // Data
   import { site, homeGallery as gallery } from "$lib";
-  import { organizationSchema } from "$lib/schemas";
 </script>
 
 <svelte:head>
