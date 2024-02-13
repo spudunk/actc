@@ -24,9 +24,11 @@
           </a>
         {/each}
       </div>
-      <a class="inline-block" target="_blank" href={site.license.url}
-        >{site.license.text}</a
-      >
+      {#if site.license}
+        <a class="inline-block" target="_blank" href={site.license.url}
+          >{site.license.text}</a
+        >
+      {/if}
       <p>{site.company.address}</p>
       <a class="inline-block" target="_blank" href={site.company.sosLink}>
         &copy; 2023 &dash; {date.getFullYear()}

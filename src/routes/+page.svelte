@@ -28,7 +28,6 @@
 </svelte:head>
 
 <SEO url={site.url} />
-<LdTag schema={organizationSchema} />
 
 <main class="relative">
   <section
