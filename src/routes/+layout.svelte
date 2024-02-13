@@ -1,8 +1,6 @@
 <script>
   import Navbar from "$lib/Navbar.svelte";
-  import LdTag from "$lib/SEO/LDTag.svelte";
   import { site } from "$lib";
-  import { organizationSchema, websiteSchema } from "$lib/schemas";
   import "../app.css";
   import "@fontsource/noto-sans";
   import "@fontsource/noto-serif";
@@ -10,8 +8,6 @@
   const date = new Date();
 </script>
 
-<LdTag schema={organizationSchema} />
-<LdTag schema={websiteSchema} />
 <Navbar />
 <slot />
 <footer class="mt-8 mb-16 lg:my-8">

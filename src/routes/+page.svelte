@@ -12,9 +12,15 @@
   import Carousel from "$lib/Carousel.svelte";
   import Contact from "$lib/Contact.svelte";
   import ReviewLinks from "$lib/ReviewLinks.svelte";
+  import LdTag from "$lib/SEO/LDTag.svelte";
   // Data
   import { site, homeGallery as gallery } from "$lib";
+  import { organizationSchema, websiteSchema } from "$lib/schemas";
 </script>
+
+<LdTag schema={organizationSchema} />
+<LdTag schema={websiteSchema} />
+<SEO url={site.url} />
 
 <svelte:head>
   <!-- Preload Hero image for Performance -->
@@ -25,7 +31,6 @@
   />
 </svelte:head>
 
-<SEO url={site.url} />
 
 <main class="relative">
   <section
