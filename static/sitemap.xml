@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://actc.pro</loc>
-  </url>
+    <url>
+        <loc>https://actc.pro</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/siding</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/windowsdoors</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/kitchenbath</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/decks</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/dryrot</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
+    <url>
+        <loc>https://actc.pro/flooring</loc>
+        <lastmod>2024-03-10</lastmod>
+    </url>
 </urlset>
