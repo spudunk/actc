@@ -16,7 +16,7 @@
   {site}
   {gallery}
   route="/decks"
-  title="Portland Decks and Covers Contractor"
+  title="A Custom Touch Construction - Portland Decks and Covers Contractor"
   description="A Custom Touch Construction - Decks and Covers Contractor - Serving Portland and surrounding areas since 1995"
 >
   <h1 class="text-4xl mb-4 font-display">{copy.h1}</h1>

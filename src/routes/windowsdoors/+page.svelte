@@ -18,7 +18,7 @@
   {site}
   {gallery}
   route="/windowsdoors"
-  title="Portland Windows and Doors Contractor"
+  title="A Custom Touch Construction - Portland Windows and Doors Contractor"
   description="A Custom Touch Construction - Windows and Doors Contractor - Serving Portland and surrounding areas since 1995"
 
 >

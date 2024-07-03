@@ -16,7 +16,7 @@
   {site}
   {gallery}
   route="/siding"
-  title="Portland Siding Contractor"
+  title="A Custom Touch Construction - Portland Siding Contractor"
   description="A Custom Touch Construction - Siding Contractor - Serving Portland and surrounding areas since 1995"
 >
   <h1 class="text-4xl mb-4 font-display">{copy.h1}</h1>
