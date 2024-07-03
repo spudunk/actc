@@ -11,7 +11,13 @@
   };
 </script>
 
-<ProductPage {site} {gallery} route="/flooring">
+<ProductPage
+  {site}
+  {gallery}
+  route="/flooring"
+  title="Portland Flooring Contractor"
+  description="A Custom Touch Construction - Flooring Contractor - Serving Portland and surrounding areas since 1995"
+>
   <h1 class="text-4xl mb-4 font-display">{copy.h1}</h1>
   <p class="text-xl my-4 max-w-prose">{copy.subheading}</p>
   {#each copy.paragraphs as pCopy, i (i)}

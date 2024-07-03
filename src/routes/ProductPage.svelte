@@ -6,9 +6,11 @@
   export let site: SiteData;
   export let route: string;
   export let gallery: ImageGallery | undefined = undefined;
+  export let title: string;
+  export let description: string;
 </script>
 
-<SEO url={`${site.url}${route}`} />
+<SEO url={`${site.url}${route}`} {title} {description} />
 
 <main class="relative">
   <section id="about" class="mt-24 mb-16">

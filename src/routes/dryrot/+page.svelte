@@ -11,7 +11,12 @@
   };
 </script>
 
-<ProductPage {site} route="/dryrot">
+<ProductPage
+  {site}
+  route="/dryrot"
+  title="Dry Rot Repair in Portland, OR"
+  description="A Custom Touch Construction - Dry Rot Repair Contractor - Serving Portland and surrounding areas since 1995"
+>
   <h1 class="text-4xl mb-4 font-display">{copy.h1}</h1>
   <p class="text-xl my-4 max-w-prose">{copy.subheading}</p>
   {#each copy.paragraphs as pCopy, i (i)}
