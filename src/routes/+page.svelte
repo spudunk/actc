@@ -31,7 +31,6 @@
   />
 </svelte:head>
 
-
 <main class="relative">
   <section
     id="hero"
@@ -166,6 +165,27 @@
     <div class="container">
       <h2 class="text-3xl mb-4 font-display">Contact</h2>
       <Contact />
+    </div>
+  </section>
+
+  <section id="finance" class="my-16">
+    <div class="container">
+      <h2 class="text-3xl mb-4 font-display">Financing</h2>
+      <p class="max-w-prose my-4">
+        Transform your kitchen or bath without the upfront stress—financing is
+        now easier than ever with Acorn Finance. Get pre-qualified in minutes
+        for competitive rates and flexible terms tailored to your project, so
+        you can start enjoying your dream remodel today. Apply securely through
+        our trusted partner and let's make it happen!
+      </p>
+      <a
+        class="flex w-fit gap-2 py-1 px-2 rounded no-underline text-white bg-green-800 shadow shadow-green-600"
+        target="_blank"
+        href={site.financeUrl}
+      >
+        Apply Now
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg>
+      </a>
     </div>
   </section>
 </main>

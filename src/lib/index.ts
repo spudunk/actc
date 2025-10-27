@@ -7,6 +7,7 @@ import googleMapsIcon from "$lib/icons/google-maps.svg";
 
 export const site: SiteData = {
   url: "https://actc.pro",
+  financeUrl: "https://www.acornfinance.com/pre-qualify/?d=MMMCS",
   title: "A Custom Touch Construction - Portland Home Contractor",
   heading: "The Better Remodel Contractor for Portland and Surrounding Areas",
   subheading: "Proudly improving homes since 1995",

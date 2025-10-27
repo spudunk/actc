@@ -36,6 +36,7 @@ type Social = {
 
 export type SiteData = {
   url: string;
+  financeUrl?: string;
   title: string;
   description: string;
   heading: string;
