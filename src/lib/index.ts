@@ -8,6 +8,7 @@ import googleMapsIcon from "$lib/icons/google-maps.svg";
 export const site: SiteData = {
   url: "https://actc.pro",
   financeUrl: "https://www.acornfinance.com/pre-qualify/?d=MMMCS",
+  googleGetReviewLink: "https://g.page/r/CR8mWHVF6BBKEBM/review",
   title: "A Custom Touch Construction - Portland Home Contractor",
   heading: "The Better Remodel Contractor for Portland and Surrounding Areas",
   subheading: "Proudly improving homes since 1995",
@@ -45,20 +46,7 @@ export const site: SiteData = {
       name: "Facebook",
       icon: facebookIcon,
       iconAlt: "Facebook Logo",
-
       iconLabel: "Facebook Business Profile",
-    },
-    {
-      id: "yelp",
-      link: "https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2",
-      name: "Yelp",
-      icon: yelpIcon,
-      iconAlt: "Yelp Logo",
-
-      iconLabel: "Yelp Business Profile",
-      reviewLink:
-        "https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2#reviews",
-      reviewText: "Yelp Reviews",
     },
     {
       id: "google",
@@ -66,10 +54,20 @@ export const site: SiteData = {
       name: "Google",
       icon: googleIcon,
       iconAlt: "Google Logo",
-
       iconLabel: "Google Business Profile",
-      reviewLink: "https://share.google/mNEMIP1KYjx2l2iV5",
-      reviewText: "Google Reviews",
+      reviewLink: "https://g.page/r/CR8mWHVF6BBKEBM/review",
+      reviewText: "Review us on Google",
+    },
+    {
+      id: "yelp",
+      link: "https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2",
+      name: "Yelp",
+      icon: yelpIcon,
+      iconAlt: "Yelp Logo",
+      iconLabel: "Yelp Business Profile",
+      reviewLink:
+        "https://www.yelp.com/biz/a-custom-touch-construction-north-plains-2#reviews",
+      reviewText: "Yelp Reviews",
     },
     {
       id: "googleMaps",
@@ -77,13 +75,13 @@ export const site: SiteData = {
       name: "Google Maps",
       icon: googleMapsIcon,
       iconAlt: "Google Maps Logo",
-
       iconLabel: "Google Maps Location",
     },
   ],
 };
 
-const imageBasePath = "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw";
+const imageBasePath =
+  "https://actc.pro/cdn-cgi/imagedelivery/XvH0UEoGmg1LgCBcC8XRgw";
 // Home / Index page
 export const homeGallery: ImageGallery = {
   basePath: imageBasePath,
@@ -195,6 +193,114 @@ export const kitchenGallery: ImageGallery = {
       alt: "actc_bath00007.jpg",
       filename: "actc_bath00007.jpg",
     },
+
+    {
+      id: "9058b04c-8ca1-431b-fa45-6650d73a0100",
+      filename: "actc_bath10.jpg",
+      alt: "actc_bath10.jpg",
+    },
+    {
+      id: "a7e999af-178a-4181-7b7f-0e155f329500",
+      filename: "actc_bath11.jpg",
+      alt: "actc_bath11.jpg",
+    },
+    {
+      id: "0f6dcbf1-0ac0-4104-4691-6f6d3cf06500",
+      filename: "actc_bath12.jpg",
+      alt: "actc_bath12.jpg",
+    },
+    {
+      id: "7933f025-10e4-45e8-9cc4-ae50b512c100",
+      filename: "actc_bath13.jpg",
+      alt: "actc_bath13.jpg",
+    },
+    {
+      id: "b184b2c3-a181-4669-6130-de643a8ccd00",
+      filename: "actc_bath14.jpg",
+      alt: "actc_bath14.jpg",
+    },
+    {
+      id: "36de6c33-1e6a-4009-070b-633c2e190c00",
+      filename: "actc_bath15.jpg",
+      alt: "actc_bath15.jpg",
+    },
+    {
+      id: "1dda57a2-dc30-41af-924a-ee3268d50100",
+      filename: "actc_bath16.jpg",
+      alt: "actc_bath16.jpg",
+    },
+    {
+      id: "85d9d0ab-31dd-4aff-a076-d296b97f3e00",
+      filename: "actc_bath17.jpg",
+      alt: "actc_bath17.jpg",
+    },
+    {
+      id: "d33e91cc-c09f-48b5-a1a3-529059dbbc00",
+      filename: "actc_bath18.jpg",
+      alt: "actc_bath18.jpg",
+    },
+    {
+      id: "c58a802a-dac5-4c03-aac2-be08d60cbc00",
+      filename: "actc_bath19.jpg",
+      alt: "actc_bath19.jpg",
+    },
+    {
+      id: "bd91d643-bec5-4cf5-9ff7-573c56267a00",
+      filename: "actc_bath8.jpg",
+      alt: "actc_bath8.jpg",
+    },
+    {
+      id: "cd8a3e78-73be-4730-9fb5-c944c2926300",
+      filename: "actc_bath23.jpg",
+      alt: "actc_bath23.jpg",
+    },
+    {
+      id: "82a68343-6a5a-418a-4e1d-6af5aa93af00",
+      filename: "actc_bath24.jpg",
+      alt: "actc_bath24.jpg",
+    },
+    {
+      id: "ae03f6ff-066c-4ba1-c079-bd622621d000",
+      filename: "actc_bath25.jpg",
+      alt: "actc_bath25.jpg",
+    },
+
+    {
+      id: "b5c9de0d-1ed9-4476-7d92-23194a695800",
+      filename: "actc_bath9.jpg",
+      alt: "actc_bath9.jpg",
+    },
+    {
+      id: "0d37e36e-ab3e-4050-8020-12cd7dc7aa00",
+      filename: "actc_bath28.jpg",
+      alt: "actc_bath28.jpg",
+    },
+    {
+      id: "71b62e45-39f3-4908-944a-8ab5c1ce6200",
+      filename: "actc_bath29.jpg",
+      alt: "actc_bath29.jpg",
+    },
+    {
+      id: "1c68f9ca-2a24-41b9-7f0f-8bd8241a2000",
+      filename: "actc_bath30.jpg",
+      alt: "actc_bath30.jpg",
+    },
+    {
+      id: "741048ca-a901-4560-615f-7f9996f79900",
+      filename: "actc_bath25.jpg",
+      alt: "actc_bath25.jpg",
+    },
+    {
+      id: "8a514a8c-82fe-4898-d067-76a2de168a00",
+      filename: "actc_bath26.jpg",
+      alt: "actc_bath26.jpg",
+    },
+    {
+      id: "005996ea-8420-43fe-2b8e-9f0a7e159400",
+      filename: "actc_bath27.jpg",
+      alt: "actc_bath27.jpg",
+    },
+
     {
       id: "478097aa-f248-46dc-f67e-3c1e2d961600",
       alt: "actc_kitchen00001.jpg",

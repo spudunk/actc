@@ -145,7 +145,9 @@
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
 
-      <ReviewLinks />
+      <div class="flex gap-4 py-4">
+        <ReviewLinks />
+      </div>
     </div>
   </section>
 

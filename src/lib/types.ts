@@ -37,6 +37,7 @@ type Social = {
 export type SiteData = {
   url: string;
   financeUrl?: string;
+  googleGetReviewLink?: string;
   title: string;
   description: string;
   heading: string;
@@ -61,7 +62,7 @@ type LocationPage = {
 };
 export type Locations = { [key: string]: LocationPage };
 
-type Image = { id: string; alt: string; filename: string };
+type Image = { id: string; alt: string; filename: string; description?: string };
 export type ImageGallery = {
   basePath: string;
   images: Image[];
