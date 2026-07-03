@@ -12,7 +12,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-cloudflare": "^4.9.0",
-    "@sveltejs/kit": "^2.68.0",
+    "@sveltejs/kit": "^2.69.1",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "autoprefixer": "^10.5.2",
     "postcss": "^8.5.16",
