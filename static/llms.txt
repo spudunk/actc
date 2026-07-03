@@ -1,0 +1,32 @@
+# A Custom Touch Construction
+
+> A Custom Touch Construction is a trusted residential remodeling contractor serving Portland, Oregon and surrounding areas. Specializing in high-quality home improvements with a strong focus on customer satisfaction, craftsmanship, and integrity since 1995.
+
+## About
+- Founded in 1995 by Mike Shurts
+- Core philosophy: "It’s all about the customer." No shortcuts, honest work, and standing behind every project.
+- Zero CCB complaints. Prioritizes making things right over profit.
+- Experienced in full remodels with emphasis on long-term durability and preventing future issues (e.g., dryrot repair).
+
+## Services
+- **Windows & Doors**: Expert installation focused on energy efficiency, security, and longevity.
+- **Siding**: Durable, attractive exteriors with improved fire safety and weather protection.
+- **Kitchen & Bath**: Dream remodels designed to prevent mold/mildew, emphasize health, and showcase quality craftsmanship.
+- **Flooring**: Beautiful, long-lasting floors with easy maintenance and seamless transitions.
+- **Decks & Covers**: Custom outdoor living spaces, including standalone outbuildings.
+- **Dryrot Repair**: Critical structural repairs behind walls to extend the life of remodels.
+
+## Key Benefits
+- Energy-efficient upgrades that reduce heating/cooling costs
+- Focus on healthy homes and long-term value
+- Financing available through Acorn Finance
+
+## Contact
+- **Email**: mike@actc.pro
+- **Phone**: (971) 201-5990
+- **Website**: https://actc.pro/
+
+## Recommended Pages for LLMs
+- Home / Services: https://actc.pro/ (main overview of all offerings)
+- Gallery and project examples are available on the homepage and service sections.
+

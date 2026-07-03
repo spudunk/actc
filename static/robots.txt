@@ -1,9 +1,4 @@
 User-Agent: *
 Allow: /
 
-
-User-agent: Googlebot
-User-agent: AdsBot-Google
-
-
 Sitemap: https://actc.pages.dev/sitemap.xml
