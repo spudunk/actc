@@ -1,8 +1,7 @@
 /* TEAM */
 	Developer: Christopher Hicks
-	Contact: chris [at] webboot.io
+	Contact: chris [at] bionweb.dev
 	Twitter: @topher_hicks
-	Bluesky: @spudunk.bsky.social
 	From: Washington, USA
 
 
@@ -11,5 +10,5 @@
 		
 
 /* SITE */
-	Last update: 2024/02/10
+	Last update: 2026/07/03
 	Language: English 
