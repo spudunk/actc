@@ -5,10 +5,13 @@
   export let d: "left" | "right" | "l" | "r";
   export let size: number = 30;
   export let color: string = "#ffffff";
+  export let label: string | undefined = undefined;
 </script>
 
 <button
-  class={`absolute cursor-pointer top-1/2 -translate-y-1/2 z-40 ease-in-out bg-neutral-700 bg-opacity-50 rounded-md p-2 ${
+  type="button"
+  aria-label={label || (d === "left" || d === "l" ? "Previous" : "Next")}
+  class={`absolute cursor-pointer top-1/2 -translate-y-1/2 z-40 ease-in-out bg-neutral-700 bg-opacity-50 rounded-md p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
     d === "left" || d === "l" ? "left-2" : "right-2"
   } ${$$props.class || ""}`}
   on:click={(e)=>{dispatch('click', e)}}
@@ -20,6 +23,7 @@
     viewBox="0 0 24 24"
     fill="none"
     stroke={color}
+    aria-hidden="true"
   >
     {#if d === "left" || d === "l"}
       <!-- Left Arrow -->

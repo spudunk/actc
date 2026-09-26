@@ -9,6 +9,7 @@ export const site: SiteData = {
   url: "https://actc.pro",
   financeUrl: "https://www.acornfinance.com/pre-qualify/?d=MMMCS",
   googleGetReviewLink: "https://g.page/r/CR8mWHVF6BBKEBM/review",
+  googlePlaceID: 'ChIJGWtCyJNpckgRHyZYdUXoEEo',
   title: "A Custom Touch Construction - Portland Home Contractor",
   heading: "The Better Remodel Contractor for Portland and Surrounding Areas",
   subheading: "Proudly improving homes since 1995",

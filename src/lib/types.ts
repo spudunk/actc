@@ -38,6 +38,7 @@ export type SiteData = {
   url: string;
   financeUrl?: string;
   googleGetReviewLink?: string;
+  googlePlaceID?: string;
   title: string;
   description: string;
   heading: string;

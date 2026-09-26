@@ -10,9 +10,7 @@
   {#each site.socials as social (social.id)}
     <a target="_blank" class="h-full" href={social.link}>
       <img
-        class={`h-full inline-block aspect-square ${
-          social.id === "facebook" ? "bg-white rounded-md" : ""
-        }`}
+        class={`h-full inline-block aspect-square`}
         src={social.icon}
         alt={social.iconAlt}
         aria-label={social.iconLabel}
