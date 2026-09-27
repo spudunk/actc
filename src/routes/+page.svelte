@@ -149,7 +149,7 @@
         <p class="font-bol ml-4">- Mike Shurts</p>
       </div>
 
-      <div class="flex gap-4 py-4">
+      <div class="flex flex-col md:flex-row gap-4 py-4">
         <RatingSnippet googleRating={data.googleRating} />
         <ReviewLinks />
       </div>
