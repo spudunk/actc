@@ -21,6 +21,6 @@ export const getGoogleRating = async (googleApiKey: string) => {
 
   return {
     rating: data.rating ?? null,
-    reviewCount: data.userRatingCount ?? null,
+    ratingCount: data.userRatingCount ?? null,
   };
 };
