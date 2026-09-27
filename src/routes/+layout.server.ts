@@ -1,10 +1,15 @@
 import { env } from '$env/dynamic/private';
 import { getGoogleRating } from '$lib/server';
-import type { GoogleRating } from '$lib/types';
 import type { LayoutServerLoad } from './$types';
 
 const RATING_KEY = 'actc-google-rating';
 const FRESH_MS = 24 * 60 * 60 * 1000;
+
+
+type GoogleRating = {
+  rating: number;
+  ratingCount: number;
+};
 
 type StoredRating = GoogleRating & {
 	fetchedAt: number;
@@ -16,33 +21,20 @@ export const load: LayoutServerLoad = ({ platform }) => {
 
 	const googleRating = (async (): Promise<GoogleRating> => {
 		const cached = kv ? await kv.get<StoredRating>(RATING_KEY, 'json') : null;
-		const stale =
-			cached &&
-			cached.rating != null &&
-			cached.ratingCount != null
-				? { rating: cached.rating, ratingCount: cached.ratingCount }
-				: null;
 
-		if (stale && cached && Date.now() - cached.fetchedAt < FRESH_MS) {
-			return stale;
+		if (cached && Date.now() - cached.fetchedAt < FRESH_MS) {
+			return { rating: cached.rating, ratingCount: cached.ratingCount };
 		}
 
-		try {
-			const fresh = await getGoogleRating(apiKey);
-			if (kv) {
-				await kv
-					.put(RATING_KEY, JSON.stringify({ ...fresh, fetchedAt: Date.now() }))
-					.catch(() => {});
-			}
-			return fresh;
-		} catch (error) {
-			if (stale) return stale;
-			throw error;
+		const fresh = await getGoogleRating(apiKey);
+		if (kv) {
+			await kv.put(RATING_KEY, JSON.stringify({ ...fresh, fetchedAt: Date.now() }));
 		}
+		return fresh;
 	})();
 
-	// Mark the rejection handled so a failure before render does not crash the worker.
-	// The component still receives this rejecting promise and falls back itself.
+	// Handled here so a rejection before render does not crash the worker.
+	// RatingSnippet still receives this promise and falls back if it fails.
 	googleRating.catch(() => {});
 
 	return { googleRating };

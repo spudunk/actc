@@ -34,11 +34,6 @@ type Social = {
   reviewText?: string;
 };
 
-export type GoogleRating = {
-  rating: number;
-  ratingCount: number;
-};
-
 export type SiteData = {
   url: string;
   financeUrl?: string;
