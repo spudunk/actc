@@ -49,7 +49,7 @@
         class="inline-block sm:hidden text-end text-xl text-stone-800 px-4 py-1 rounded bg-neutral-200"
         >Call Now</a
       >
-      <SocialIcons class='hidden lg:flex h-7' />
+      <SocialIcons class='hidden lg:flex h-8' />
     </div>
   </div>
 </header>
