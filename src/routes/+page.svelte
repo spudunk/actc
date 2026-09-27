@@ -16,6 +16,10 @@
   // Data
   import { site, homeGallery as gallery } from "$lib";
   import { organizationSchema, websiteSchema } from "$lib/schemas";
+  import RatingSnippet from "$lib/RatingSnippet.svelte";
+  import type { PageData } from "./$types";
+
+  export let data: PageData;
 </script>
 
 <LdTag schema={organizationSchema} />
@@ -146,6 +150,7 @@
       </div>
 
       <div class="flex gap-4 py-4">
+        <RatingSnippet googleRating={data.googleRating} />
         <ReviewLinks />
       </div>
     </div>

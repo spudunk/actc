@@ -34,11 +34,18 @@ type Social = {
   reviewText?: string;
 };
 
+export type GoogleRating = {
+  rating: number;
+  ratingCount: number;
+};
+
 export type SiteData = {
   url: string;
   financeUrl?: string;
   googleGetReviewLink?: string;
   googlePlaceID?: string;
+  googleLink: string;
+  rating: {score: number, count: number}
   title: string;
   description: string;
   heading: string;

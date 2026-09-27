@@ -10,6 +10,8 @@ export const site: SiteData = {
   financeUrl: "https://www.acornfinance.com/pre-qualify/?d=MMMCS",
   googleGetReviewLink: "https://g.page/r/CR8mWHVF6BBKEBM/review",
   googlePlaceID: 'ChIJGWtCyJNpckgRHyZYdUXoEEo',
+  googleLink: "https://share.google/mNEMIP1KYjx2l2iV5",
+  rating: {score: 5, count: 8},
   title: "A Custom Touch Construction - Portland Home Contractor",
   heading: "The Better Remodel Contractor for Portland and Surrounding Areas",
   subheading: "Proudly improving homes since 1995",
