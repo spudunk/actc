@@ -15,7 +15,7 @@ type StoredRating = GoogleRating & {
 	fetchedAt: number;
 };
 
-type RatingSource = 'cache' | 'api' | 'stale' | 'empty';
+type RatingSource = 'cache' | 'api' | 'stale' | 'empty' | 'kv_error';
 
 function logRating(event: {
 	source: RatingSource;
@@ -38,37 +38,54 @@ export const load: LayoutServerLoad = ({ platform }) => {
 	const apiKey = env.GOOGLE_MAPS_PLATFORM_KEY ?? '';
 
 	const googleRating = (async (): Promise<GoogleRating> => {
-		const cached = kv ? await kv.get<StoredRating>(RATING_KEY, 'json') : null;
-		const ageMs = cached ? Date.now() - cached.fetchedAt : null;
+		if (!kv) {
+			logRating({ source: 'empty', kv: false, error: 'KV binding missing' });
+			throw new Error('KV binding missing');
+		}
 
-		if (cached && ageMs != null && ageMs < FRESH_MS) {
+		let cached: StoredRating | null;
+		try {
+			cached = await kv.get<StoredRating>(RATING_KEY, 'json');
+		} catch (error) {
+			logRating({
+				source: 'kv_error',
+				kv: true,
+				error: error instanceof Error ? error.message : 'KV read failed'
+			});
+			throw error;
+		}
+
+		if (!cached) {
+			logRating({ source: 'empty', kv: true, error: 'no cached rating' });
+			throw new Error('No cached Google rating');
+		}
+
+		const ageMs = Date.now() - cached.fetchedAt;
+		if (ageMs < FRESH_MS) {
 			logRating({ source: 'cache', kv: true, ageMs });
 			return { rating: cached.rating, ratingCount: cached.ratingCount };
 		}
 
 		try {
 			const fresh = await getGoogleRating(apiKey);
-			if (kv) {
-				await kv.put(
-					RATING_KEY,
-					JSON.stringify({
-						rating: fresh.rating,
-						ratingCount: fresh.ratingCount,
-						fetchedAt: Date.now()
-					})
-				);
-			}
-			logRating({ source: 'api', kv: Boolean(kv), ageMs, status: 200 });
+			await kv.put(
+				RATING_KEY,
+				JSON.stringify({
+					rating: fresh.rating,
+					ratingCount: fresh.ratingCount,
+					fetchedAt: Date.now()
+				})
+			);
+			logRating({ source: 'api', kv: true, ageMs, status: 200 });
 			return { rating: fresh.rating, ratingCount: fresh.ratingCount };
 		} catch (error) {
 			logRating({
-				source: cached ? 'stale' : 'empty',
-				kv: Boolean(kv),
+				source: 'stale',
+				kv: true,
 				ageMs,
 				error: error instanceof Error ? error.message : 'rating fetch failed'
 			});
-			if (cached) return { rating: cached.rating, ratingCount: cached.ratingCount };
-			throw error;
+			return { rating: cached.rating, ratingCount: cached.ratingCount };
 		}
 	})();
 
